@@ -1,7 +1,7 @@
 module.exports = {
     defaultTokenSymbol: 'CUR',
     defaultTokenName: 'CUR',
-    deployer: '0x7be2F6C96F6EFb3B772B5647d324550FCD6b9abF',
+    deployer: '0xb4124ceb3451635dacedd11767f004d8a28c6ee7',
     mainnet: {
         defaultTokenAddress: '0x13339fd07934cd674269726edf3b5ccee9dd93de'
     },
