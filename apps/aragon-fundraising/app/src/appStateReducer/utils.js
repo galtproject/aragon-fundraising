@@ -2,6 +2,7 @@ import cloneDeep from 'lodash.cloneDeep'
 import BigNumber from 'bignumber.js'
 import { Order, Tokens } from '../constants'
 
+const {defaultTokenSymbol} = require('../../../../../config');
 /**
  * Checks whether we have enough data to start the fundraising app
  * @param {Object} state - the background script state
@@ -29,7 +30,7 @@ export const checkCollaterals = (collaterals, { type }) => {
     const realAntAddress = Tokens[type].ANT.toLowerCase()
     // get DAI and ANT addresses from the fundraising app
     const currentCollaterals = Array.from(collaterals).map(([address, { symbol }]) => ({ address, symbol }))
-    const daiAddress = currentCollaterals.find(c => c.symbol === 'DAI').address
+    const daiAddress = currentCollaterals.find(c => c.symbol === defaultTokenSymbol).address
     const antAddress = currentCollaterals.find(c => c.symbol === 'ANT').address
     // check they are the same
     const sameDai = daiAddress?.toLowerCase() === realDaiAddress
@@ -110,7 +111,7 @@ const transformCollateral = (address, data) => {
  */
 export const computeCollaterals = collaterals => {
   const computedCollaterals = Array.from(cloneDeep(collaterals))
-  const [daiAddress, daiData] = computedCollaterals.find(([_, data]) => data.symbol === 'DAI')
+  const [daiAddress, daiData] = computedCollaterals.find(([_, data]) => data.symbol === defaultTokenSymbol)
   const [antAddress, antData] = computedCollaterals.find(([_, data]) => data.symbol === 'ANT')
   return {
     dai: transformCollateral(daiAddress, daiData),

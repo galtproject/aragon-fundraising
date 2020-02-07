@@ -6,6 +6,8 @@ const deployENS = require('@aragon/os/scripts/deploy-test-ens')
 const deployAragonID = require('@aragon/id/scripts/deploy-beta-aragonid')
 const deployDAOFactory = require('@aragon/os/scripts/deploy-daofactory')
 
+const { defaultTokenSymbol } = require('../../../config');
+
 module.exports = class TemplateDeployer {
   constructor(web3, artifacts, owner, options = { verbose: false }) {
     this.web3 = web3
@@ -23,7 +25,7 @@ module.exports = class TemplateDeployer {
 
   async deployTemplate(contractName) {
     const TokenMock = this.artifacts.require('TokenMock')
-    const DAI = await TokenMock.new('0xb4124cEB3451635DAcedd11767f004d8a28c6eE7', 1000000000000000000, 'DAI', 'DAI')
+    const DAI = await TokenMock.new('0xb4124cEB3451635DAcedd11767f004d8a28c6eE7', 1000000000000000000, defaultTokenSymbol, defaultTokenSymbol)
     this.log(`Test DAI deployed at ${DAI.address}`)
     const ANT = await TokenMock.new('0xb4124cEB3451635DAcedd11767f004d8a28c6eE7', 1000000000000000000, 'ANT', 'ANT')
     this.log(`Test ANT deployed at ${ANT.address}`)
@@ -215,7 +217,7 @@ module.exports = class TemplateDeployer {
   }
 
   log(...args) {
-    if (this.verbose) console.log(...args)
+    console.log(...args)
   }
 
   error(message) {

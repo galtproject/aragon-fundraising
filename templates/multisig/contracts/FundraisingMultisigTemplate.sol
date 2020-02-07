@@ -155,8 +155,61 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
         );
         // setup share apps permissions [now that fundraising apps have been installed]
         _setupSharePermissions(dao);
+    }
+
+    function setupFundraisingPermissions() external {
         // setup fundraising apps permissions
-        _setupFundraisingPermissions(dao);
+        Kernel _dao = _daoCache();
+        ACL acl = ACL(_dao.acl());
+
+        (, Voting boardVoting,,) = _boardAppsCache();
+        (, Voting shareVoting) = _shareAppsCache();
+        (Agent reserve, Presale presale, MarketMaker marketMaker, Tap tap, Controller controller) = _fundraisingAppsCache();
+
+        // reserve
+        address[] memory grantees = new address[](2);
+        grantees[0] = address(tap);
+        grantees[1] = address(marketMaker);
+        acl.createPermission(shareVoting, reserve, reserve.SAFE_EXECUTE_ROLE(), shareVoting);
+        acl.createPermission(controller, reserve, reserve.ADD_PROTECTED_TOKEN_ROLE(), shareVoting);
+        _createPermissions(acl, grantees, reserve, reserve.TRANSFER_ROLE(), shareVoting);
+        // presale
+        acl.createPermission(controller, presale, presale.OPEN_ROLE(), shareVoting);
+        acl.createPermission(controller, presale, presale.CONTRIBUTE_ROLE(), shareVoting);
+        // market maker
+        acl.createPermission(controller, marketMaker, marketMaker.OPEN_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_BENEFICIARY_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_FEES_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.ADD_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.REMOVE_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.OPEN_BUY_ORDER_ROLE(), shareVoting);
+        acl.createPermission(controller, marketMaker, marketMaker.OPEN_SELL_ORDER_ROLE(), shareVoting);
+        // tap
+        acl.createPermission(controller, tap, tap.UPDATE_BENEFICIARY_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.UPDATE_MAXIMUM_TAP_RATE_INCREASE_PCT_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.UPDATE_MAXIMUM_TAP_FLOOR_DECREASE_PCT_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.ADD_TAPPED_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.UPDATE_TAPPED_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.RESET_TAPPED_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(controller, tap, tap.WITHDRAW_ROLE(), shareVoting);
+        // controller
+        // ADD_COLLATERAL_TOKEN_ROLE is handled later [after collaterals have been added]
+        acl.createPermission(shareVoting, controller, controller.UPDATE_BENEFICIARY_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.UPDATE_FEES_ROLE(), shareVoting);
+        // acl.createPermission(shareVoting, controller, controller.ADD_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.REMOVE_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.UPDATE_COLLATERAL_TOKEN_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.UPDATE_MAXIMUM_TAP_RATE_INCREASE_PCT_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.UPDATE_MAXIMUM_TAP_FLOOR_DECREASE_PCT_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.ADD_TOKEN_TAP_ROLE(), shareVoting);
+        acl.createPermission(shareVoting, controller, controller.UPDATE_TOKEN_TAP_ROLE(), shareVoting);
+        acl.createPermission(boardVoting, controller, controller.OPEN_PRESALE_ROLE(), shareVoting);
+        acl.createPermission(presale, controller, controller.OPEN_TRADING_ROLE(), shareVoting);
+        acl.createPermission(address(-1), controller, controller.CONTRIBUTE_ROLE(), shareVoting);
+        acl.createPermission(address(-1), controller, controller.OPEN_BUY_ORDER_ROLE(), shareVoting);
+        acl.createPermission(address(-1), controller, controller.OPEN_SELL_ORDER_ROLE(), shareVoting);
+        acl.createPermission(address(-1), controller, controller.WITHDRAW_ROLE(), shareVoting);
     }
 
     function finalizeInstance(
@@ -393,59 +446,6 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
         _createPermissions(acl, grantees, shareTM, shareTM.BURN_ROLE(), shareVoting);
         // voting
         _createVotingPermissions(acl, shareVoting, shareVoting, boardTM, shareVoting);
-    }
-
-    function _setupFundraisingPermissions(Kernel _dao) internal {
-        ACL acl = ACL(_dao.acl());
-
-        (, Voting boardVoting,,) = _boardAppsCache();
-        (, Voting shareVoting) = _shareAppsCache();
-        (Agent reserve, Presale presale, MarketMaker marketMaker, Tap tap, Controller controller) = _fundraisingAppsCache();
-
-        // reserve
-        address[] memory grantees = new address[](2);
-        grantees[0] = address(tap);
-        grantees[1] = address(marketMaker);
-        acl.createPermission(shareVoting, reserve, reserve.SAFE_EXECUTE_ROLE(), shareVoting);
-        acl.createPermission(controller, reserve, reserve.ADD_PROTECTED_TOKEN_ROLE(), shareVoting);
-        _createPermissions(acl, grantees, reserve, reserve.TRANSFER_ROLE(), shareVoting);
-        // presale
-        acl.createPermission(controller, presale, presale.OPEN_ROLE(), shareVoting);
-        acl.createPermission(controller, presale, presale.CONTRIBUTE_ROLE(), shareVoting);
-        // market maker
-        acl.createPermission(controller, marketMaker, marketMaker.OPEN_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_BENEFICIARY_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_FEES_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.ADD_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.REMOVE_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.UPDATE_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.OPEN_BUY_ORDER_ROLE(), shareVoting);
-        acl.createPermission(controller, marketMaker, marketMaker.OPEN_SELL_ORDER_ROLE(), shareVoting);
-        // tap
-        acl.createPermission(controller, tap, tap.UPDATE_BENEFICIARY_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.UPDATE_MAXIMUM_TAP_RATE_INCREASE_PCT_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.UPDATE_MAXIMUM_TAP_FLOOR_DECREASE_PCT_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.ADD_TAPPED_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.UPDATE_TAPPED_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.RESET_TAPPED_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(controller, tap, tap.WITHDRAW_ROLE(), shareVoting);
-        // controller
-        // ADD_COLLATERAL_TOKEN_ROLE is handled later [after collaterals have been added]
-        acl.createPermission(shareVoting, controller, controller.UPDATE_BENEFICIARY_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.UPDATE_FEES_ROLE(), shareVoting);
-        // acl.createPermission(shareVoting, controller, controller.ADD_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.REMOVE_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.UPDATE_COLLATERAL_TOKEN_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.UPDATE_MAXIMUM_TAP_RATE_INCREASE_PCT_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.UPDATE_MAXIMUM_TAP_FLOOR_DECREASE_PCT_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.ADD_TOKEN_TAP_ROLE(), shareVoting);
-        acl.createPermission(shareVoting, controller, controller.UPDATE_TOKEN_TAP_ROLE(), shareVoting);
-        acl.createPermission(boardVoting, controller, controller.OPEN_PRESALE_ROLE(), shareVoting);
-        acl.createPermission(presale, controller, controller.OPEN_TRADING_ROLE(), shareVoting);
-        acl.createPermission(address(-1), controller, controller.CONTRIBUTE_ROLE(), shareVoting);
-        acl.createPermission(address(-1), controller, controller.OPEN_BUY_ORDER_ROLE(), shareVoting);
-        acl.createPermission(address(-1), controller, controller.OPEN_SELL_ORDER_ROLE(), shareVoting);
-        acl.createPermission(address(-1), controller, controller.WITHDRAW_ROLE(), shareVoting);
     }
 
     /***** internal cache functions *****/

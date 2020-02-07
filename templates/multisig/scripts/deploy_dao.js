@@ -49,8 +49,11 @@ module.exports = async callback => {
   try {
     const template = await Template.at(process.argv[6])
 
+    console.log('prepareInstance');
     const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, BOARD_MEMBERS, BOARD_VOTING_SETTINGS, 0, { gasPrice: 60000000001 })
+    console.log('installShareApps');
     await template.installShareApps(SHARE_TOKEN_NAME, SHARE_TOKEN_SYMBOL, SHARE_VOTING_SETTINGS, { gasPrice: 60000000001 })
+    console.log('installFundraisingApps');
     await template.installFundraisingApps(
       PRESALE_GOAL,
       PRESALE_PERIOD,
@@ -64,10 +67,14 @@ module.exports = async callback => {
       MAXIMUM_TAP_RATE_INCREASE_PCT,
       MAXIMUM_TAP_FLOOR_DECREASE_PCT,
       { gasPrice: 60000000001 }
-    )
+    );
+
+    // console.log('setupFundraisingPermissions');
+    // await template.setupFundraisingPermissions();
+    console.log('finalizeInstance');
     await template.finalizeInstance(ID, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 60000000001 })
     const dao = getEventArgument(receipt, 'DeployDao', 'dao')
-    console.log('DAO deployed at ' + dao)
+    console.log('DAO deployed at ' + dao, ID)
   } catch (err) {
     console.log(err)
   }
