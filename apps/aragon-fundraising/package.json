@@ -30,7 +30,7 @@
     "apm:publish:hatch:minor": "aragon apm publish minor --files app/build --environment hatch --use-frame --prepublish false",
     "apm:publish:hatch:major": "aragon apm publish major --files app/build --environment hatch --use-frame",
     "apm:publish:rinkeby:patch": "aragon apm publish patch --files app/build --environment rinkeby --use-frame  --prepublish false",
-    "apm:publish:rinkeby:major": "aragon apm publish major --files app/build --environment rinkeby --use-frame",
+    "apm:publish:rinkeby:major": "aragon apm publish major --files app/build --environment rinkeby --prepublish false --debug",
     "apm:publish:mainnet:major": "aragon apm publish major --files app/build --environment mainnet --use-frame",
     "publish": "npm run apm:publish:rpc:major"
   },
@@ -57,7 +57,7 @@
     "@aragon/apps-shared-minime": "^1.0.0",
     "@aragon/apps-token-manager": "^2.1.0",
     "@aragon/apps-vault": "^4.1.0",
-    "@aragon/cli": "^6.2.5",
+    "@aragon/cli": "7.0.3",
     "@aragon/test-helpers": "^2.0.0",
     "eth-ens-namehash": "^2.0.8",
     "eth-gas-reporter": "^0.2.0",
