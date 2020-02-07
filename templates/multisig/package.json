@@ -23,7 +23,7 @@
     "deploy:devnet": "npm run compile && truffle exec ./scripts/deploy.js --network devnet",
     "deploy:staging": "npm run compile && truffle exec ./scripts/deploy.js --network rinkeby --ens 0xfe03625ea880a8cba336f9b5ad6e15b0a3b5a939",
     "deploy:rinkeby": "npm run compile && truffle exec scripts/deploy_raw.js rinkeby --network rinkeby",
-    "deploy:mainnet": "npm run compile && truffle exec ./scripts/deploy_raw.js mainnet --network frame",
+    "deploy:mainnet": "npm run compile && truffle exec ./scripts/deploy_raw.js mainnet --network mainnet",
     "publish:arachain": "aragon apm publish major $(npm run deploy:arachain | tail -n 1) --environment default --skip-confirmation true --propagate-content false",
     "publish:rpc": "aragon apm publish major $(npm run deploy:rpc | tail -n 1) --environment default",
     "publish:devnet": "aragon apm publish major $(npm run deploy:devnet | tail -n 1) --environment default",
