@@ -31,3 +31,5 @@ package-lock.json
 
 # macOS shit
 */**/.DS_Store
+
+.idea
