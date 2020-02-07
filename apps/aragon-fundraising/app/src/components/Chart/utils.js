@@ -2,8 +2,8 @@ import getMinutes from 'date-fns/getMinutes'
 import getTime from 'date-fns/getTime'
 import set from 'date-fns/set'
 import groupBy from 'lodash/groupBy'
-import minBy from 'lodash.minBy'
-import maxBy from 'lodash.maxBy'
+import minBy from 'lodash/minBy'
+import maxBy from 'lodash/maxBy'
 
 // ranges used to group orders
 const ranges = [
