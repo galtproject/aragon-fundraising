@@ -6,7 +6,7 @@ const DAYS = 24 * 3600
 const WEEKS = 7 * DAYS
 const PPM = 1e6
 
-const BOARD_MEMBERS = ['0x7be2F6C96F6EFb3B772B5647d324550FCD6b9abF', '']
+const BOARD_MEMBERS = ['0x7be2F6C96F6EFb3B772B5647d324550FCD6b9abF']
 
 const BOARD_TOKEN_NAME = 'Board Token'
 const BOARD_TOKEN_SYMBOL = 'BOARD'
@@ -43,7 +43,7 @@ const FLOOR = Math.pow(10, 21)
 const SLIPPAGES = [2 * Math.pow(10, 17), Math.pow(10, 18)]
 const BATCH_BLOCKS = 1
 
-const ID = 'hacked3-fundraising'
+const ID = 'hacked4-fundraising'
 
 module.exports = async callback => {
   try {
@@ -69,10 +69,10 @@ module.exports = async callback => {
       { gasPrice: 1000000001 }
     );
 
-    // console.log('setupFundraisingPermissions');
-    // await template.setupFundraisingPermissions();
+    console.log('setupFundraisingPermissions');
+    await template.setupFundraisingPermissions();
     console.log('finalizeInstance');
-    await template.finalizeInstance(ID, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 1000000001 })
+    await template.finalizeInstance(ID, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 1000000001, gas: 9500000 })
     const dao = getEventArgument(receipt, 'DeployDao', 'dao')
     console.log('DAO deployed at ' + dao, ID)
   } catch (err) {
