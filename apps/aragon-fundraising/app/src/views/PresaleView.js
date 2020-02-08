@@ -100,7 +100,7 @@ export default () => {
     <PresaleViewContext.Provider value={context}>
       <IdentityProvider onResolve={handleResolveLocalIdentity} onShowLocalIdentityModal={handleShowLocalIdentityModal}>
         <Header
-          primary="My Hacked Fundraising Presale [̲̅$̲̅(ツ)$̲̅]"
+          primary="Fundraising Presale"
           secondary={
             <Button
               disabled={polledPresaleState !== PresaleConstants.state.FUNDING}
