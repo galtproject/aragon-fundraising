@@ -7,7 +7,7 @@ const DAYS = 24 * 3600
 const WEEKS = 7 * DAYS
 const PPM = 1e6
 
-const BOARD_MEMBERS = ['0x7be2F6C96F6EFb3B772B5647d324550FCD6b9abF']
+const { orgName, orgBoardMembers } = require('../../../config');
 
 const BOARD_TOKEN_NAME = 'Board Token'
 const BOARD_TOKEN_SYMBOL = 'BOARD'
@@ -47,14 +47,12 @@ const FLOOR = Math.pow(10, 21)
 const SLIPPAGES = [2 * Math.pow(10, 17), Math.pow(10, 18)]
 const BATCH_BLOCKS = 1
 
-const { orgName } = require('../../../config');
-
 module.exports = async callback => {
   try {
     const template = await Template.at(process.argv[6])
 
     console.log('prepareInstance');
-    const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, BOARD_MEMBERS, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })
+    const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, orgBoardMembers, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })
     console.log('installShareApps');
     await template.installShareApps(SHARE_TOKEN_NAME, SHARE_TOKEN_SYMBOL, SHARE_VOTING_SETTINGS, { gasPrice: 1000000001 })
     console.log('installFundraisingApps');
