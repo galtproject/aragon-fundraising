@@ -249,7 +249,7 @@ const KeyMetrics = styled(Box)`
 
     .number {
       margin-bottom: ${2 * GU}px;
-      font-size: 26px;
+      font-size: 21px;
       line-height: 24px;
     }
 
