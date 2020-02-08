@@ -51,7 +51,7 @@ const { orgName } = require('../../../config');
 
 module.exports = async callback => {
   try {
-    const template = await Template.at(process.argv[6]);
+    const template = await Template.at(process.argv[6])
 
     console.log('prepareInstance');
     const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, BOARD_MEMBERS, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })

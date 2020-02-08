@@ -159,7 +159,7 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
     }
 
     function setupFundraisingPermissions() external {
-        _ensureFundraisingAppsCache();
+//        _ensureFundraisingAppsCache();
 
         // setup fundraising apps permissions
         Kernel _dao = _daoCache();
