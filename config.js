@@ -1,6 +1,6 @@
 module.exports = {
-    orgName: 'cur-test',
-    fundraisingName: 'cur-fundraising.open.aragonpm.eth',
+    orgName: 'curv-test',
+    fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     defaultTokenSymbol: 'CURV',
     defaultTokenName: 'CURV Token',
     deployer: '0xb4124ceb3451635dacedd11767f004d8a28c6ee7',
