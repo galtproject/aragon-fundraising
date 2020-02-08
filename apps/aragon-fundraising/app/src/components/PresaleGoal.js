@@ -57,7 +57,7 @@ export default () => {
   }
 
   return (
-    <Box heading="Presale Goal">
+    <Box heading="Hacked Presale Goal">
       <div className="circle">
         <CircleGraph value={totalRaised.div(goal).toNumber()} size={20.5 * GU} width={6} color={circleColor[state]} />
         <p

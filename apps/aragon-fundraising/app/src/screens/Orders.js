@@ -31,6 +31,8 @@ import { Order } from '../constants'
 import { formatBigNumber, fromDecimals } from '../utils/bn-utils'
 import { MainViewContext } from '../context'
 
+const { defaultTokenSymbol } = require('../../../../../config')
+
 /**
  * Keeps an order if within the date range (inclusive)
  * @param {Object} order - a background script order object
@@ -253,7 +255,7 @@ export default ({ myOrders }) => {
   const handleDownload = () => {
     const mappedData = filteredOrders.map(order => {
       const date = format(order.timestamp, 'MM/dd/yyyy - HH:mm:ss')
-      const amount = fromDecimals(order.value, order.symbol === 'DAI' ? daiDecimals : antDecimals).toFixed(2, 1)
+      const amount = fromDecimals(order.value, order.symbol === defaultTokenSymbol ? daiDecimals : antDecimals).toFixed(2, 1)
       const price = `$${order.price.toFixed(2, 1)}`
       const tokens = fromDecimals(order.amount, tokenDecimals).toFixed(2, 1)
       return `${date},${order.user},${order.state},${amount} ${order.symbol},${price},${order.type},${tokens}`
@@ -346,7 +348,7 @@ export default ({ myOrders }) => {
             // value
             entry.push(
               <p key="orderAmount" css={data.type === Order.type.BUY ? 'font-weight: 600; color: #2CC68F;' : 'font-weight: 600;'}>
-                {formatBigNumber(data.value, data.symbol === 'DAI' ? daiDecimals : antDecimals, { numberPrefix: sign })} {data.symbol}
+                {formatBigNumber(data.value, data.symbol === defaultTokenSymbol ? daiDecimals : antDecimals, { numberPrefix: sign })} {data.symbol}
               </p>
             )
             // price
