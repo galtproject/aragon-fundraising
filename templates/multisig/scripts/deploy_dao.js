@@ -2,6 +2,7 @@ const Template = artifacts.require('FundraisingMultisigTemplate')
 
 const { getEventArgument } = require('@aragon/test-helpers/events')
 
+const HOURS = 3600
 const DAYS = 24 * 3600
 const WEEKS = 7 * DAYS
 const PPM = 1e6
@@ -25,10 +26,13 @@ const SHARE_MIN_ACCEPTANCE_QUORUM = 5e16
 const SHARE_VOTING_SETTINGS = [SHARE_SUPPORT_REQUIRED, SHARE_MIN_ACCEPTANCE_QUORUM, SHARE_VOTE_DURATION]
 
 const PRESALE_GOAL = 100e18
-const PRESALE_PERIOD = 14 * DAYS
+// const PRESALE_PERIOD = 14 * DAYS
+const PRESALE_PERIOD = 4 * HOURS
 const PRESALE_EXCHANGE_RATE = 2 * PPM
-const VESTING_CLIFF_PERIOD = 90 * DAYS
-const VESTING_COMPLETE_PERIOD = 360 * DAYS
+// const VESTING_CLIFF_PERIOD = 90 * DAYS
+const VESTING_CLIFF_PERIOD = 10 * DAYS
+// const VESTING_COMPLETE_PERIOD = 360 * DAYS
+const VESTING_COMPLETE_PERIOD = 30 * DAYS
 const PERCENT_SUPPLY_OFFERED = 0.9 * PPM // 90%
 const PERCENT_FUNDING_FOR_BENEFICIARY = 0.25 * PPM // 25%
 
@@ -43,7 +47,7 @@ const FLOOR = Math.pow(10, 21)
 const SLIPPAGES = [2 * Math.pow(10, 17), Math.pow(10, 18)]
 const BATCH_BLOCKS = 1
 
-const ID = 'hacked4-fundraising'
+const ID = 'hacked5-fundraising'
 
 module.exports = async callback => {
   try {
