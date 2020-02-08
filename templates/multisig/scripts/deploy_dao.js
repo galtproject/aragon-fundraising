@@ -70,7 +70,7 @@ module.exports = async callback => {
       BATCH_BLOCKS,
       MAXIMUM_TAP_RATE_INCREASE_PCT,
       MAXIMUM_TAP_FLOOR_DECREASE_PCT,
-      { gasPrice: 1000000001, gas: 9500000 }
+      { gasPrice: 1000000001 }
     );
 
     console.log('setupFundraisingPermissions');
