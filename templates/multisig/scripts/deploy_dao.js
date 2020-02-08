@@ -26,9 +26,9 @@ const SHARE_MIN_ACCEPTANCE_QUORUM = 5e16
 const SHARE_VOTING_SETTINGS = [SHARE_SUPPORT_REQUIRED, SHARE_MIN_ACCEPTANCE_QUORUM, SHARE_VOTE_DURATION]
 
 const PRESALE_GOAL = 100e18
+const PRESALE_EXCHANGE_RATE = 2 * PPM
 // const PRESALE_PERIOD = 14 * DAYS
 const PRESALE_PERIOD = 4 * HOURS
-const PRESALE_EXCHANGE_RATE = 2 * PPM
 // const VESTING_CLIFF_PERIOD = 90 * DAYS
 const VESTING_CLIFF_PERIOD = 10 * DAYS
 // const VESTING_COMPLETE_PERIOD = 360 * DAYS
@@ -47,11 +47,11 @@ const FLOOR = Math.pow(10, 21)
 const SLIPPAGES = [2 * Math.pow(10, 17), Math.pow(10, 18)]
 const BATCH_BLOCKS = 1
 
-const ID = 'hacked5-fundraising'
+const { orgName } = require('../../../config');
 
 module.exports = async callback => {
   try {
-    const template = await Template.at(process.argv[6])
+    const template = await Template.at(process.argv[6]);
 
     console.log('prepareInstance');
     const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, BOARD_MEMBERS, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })
@@ -70,15 +70,15 @@ module.exports = async callback => {
       BATCH_BLOCKS,
       MAXIMUM_TAP_RATE_INCREASE_PCT,
       MAXIMUM_TAP_FLOOR_DECREASE_PCT,
-      { gasPrice: 1000000001 }
+      { gasPrice: 1000000001, gas: 9500000 }
     );
 
     console.log('setupFundraisingPermissions');
     await template.setupFundraisingPermissions();
     console.log('finalizeInstance');
-    await template.finalizeInstance(ID, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 1000000001, gas: 9500000 })
+    await template.finalizeInstance(orgName, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 1000000001, gas: 9500000 })
     const dao = getEventArgument(receipt, 'DeployDao', 'dao')
-    console.log('DAO deployed at ' + dao, ID)
+    console.log('DAO deployed at ' + dao, orgName)
   } catch (err) {
     console.log(err)
   }
