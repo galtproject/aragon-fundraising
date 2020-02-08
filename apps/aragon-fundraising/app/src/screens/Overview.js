@@ -8,6 +8,10 @@ import Chart from '../components/Chart'
 import { formatBigNumber, toMonthlyAllocation } from '../utils/bn-utils'
 import { MainViewContext } from '../context'
 
+const { defaultTokenSymbol } = require('../../../../../config');
+
+const numberSuffix = ' ' + defaultTokenSymbol;
+
 export default () => {
   // *****************************
   // background script state
@@ -61,9 +65,9 @@ export default () => {
   // human readable values
   // *****************************
   // numbers
-  const adjustedPrice = price ? formatBigNumber(price, 0, { numberPrefix: '$' }) : '...'
+  const adjustedPrice = price ? formatBigNumber(price, 0, { numberSuffix }) : '...'
   const marketCap = price ? price.times(realSupply) : null
-  const adjustedMarketCap = price && marketCap ? formatBigNumber(marketCap, daiDecimals, { numberPrefix: '$' }) : '...'
+  const adjustedMarketCap = price && marketCap ? formatBigNumber(marketCap, daiDecimals, { numberSuffix }) : '...'
   const tradingVolume = orders
     // only keep DAI orders
     .filter(o => o.collateral === daiAddress)
@@ -71,12 +75,12 @@ export default () => {
     .map(o => o.value)
     // sum them and tada, you got the trading volume
     .reduce((acc, current) => acc.plus(current), new BigNumber(0))
-  const adjustedTradingVolume = formatBigNumber(tradingVolume, daiDecimals, { numberPrefix: '$' })
+  const adjustedTradingVolume = formatBigNumber(tradingVolume, daiDecimals, { numberSuffix })
   const adjustedTokenSupply = formatBigNumber(realSupply, tokenDecimals)
   const realReserve = reserveBalance ? reserveBalance.minus(toBeClaimed) : null
-  const adjustedReserves = realReserve ? formatBigNumber(realReserve, daiDecimals, { numberPrefix: '$' }) : '...'
-  const adjustedMonthlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals), daiDecimals, { numberPrefix: '$' })
-  const adjustedYearlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals).times(12), daiDecimals, { numberPrefix: '$' })
+  const adjustedReserves = realReserve ? formatBigNumber(realReserve, daiDecimals, { numberSuffix }) : '...'
+  const adjustedMonthlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals), daiDecimals, { numberSuffix })
+  const adjustedYearlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals).times(12), daiDecimals, { nnumberSuffix })
 
   // trends
   /**
@@ -97,7 +101,7 @@ export default () => {
   // if startPrice is here, realSupply too, since NewMetaBatch event occurs before NewBatch one
   const trendBatchMarketCap = marketCap && trendBatch?.startPrice ? trendBatch.startPrice.times(trendBatch.realSupply) : null
   const marketCapDiff = marketCap && trendBatch?.startPrice ? marketCap.minus(trendBatchMarketCap) : null
-  const adjustedMarketCapTrend = marketCapDiff ? formatBigNumber(marketCapDiff, daiDecimals, { keepSign: true, numberPrefix: '$' }) : null
+  const adjustedMarketCapTrend = marketCapDiff ? formatBigNumber(marketCapDiff, daiDecimals, { keepSign: true, numberSuffix }) : null
   const tradingTrendVolume = trendBatch?.id
     ? orders
         // only keep DAI orders since the start of the trendBatch
@@ -107,11 +111,11 @@ export default () => {
         // sum them and tada, you got the trading volume between now and the beginning of the trendBatch
         .reduce((acc, current) => acc.plus(current), new BigNumber(0))
     : null
-  const adjustedTradingVolumeTrend = tradingTrendVolume ? formatBigNumber(tradingTrendVolume, daiDecimals, { keepSign: true, numberPrefix: '$' }) : null
+  const adjustedTradingVolumeTrend = tradingTrendVolume ? formatBigNumber(tradingTrendVolume, daiDecimals, { keepSign: true, numberSuffix }) : null
   const adjustedTokenSupplyTrend = trendBatch?.realSupply ? formatBigNumber(realSupply.minus(trendBatch.realSupply), tokenDecimals, { keepSign: true }) : null
   const adjustedReservesTrend =
     reserveBalance && trendBatch?.realBalance
-      ? formatBigNumber(realReserve.minus(trendBatch.realBalance), tokenDecimals, { keepSign: true, numberPrefix: '$' })
+      ? formatBigNumber(realReserve.minus(trendBatch.realBalance), tokenDecimals, { keepSign: true, numberSuffix })
       : null
 
   return (
