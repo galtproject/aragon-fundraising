@@ -33,6 +33,8 @@ import { MainViewContext } from '../context'
 
 const { defaultTokenSymbol } = require('../../../../../config')
 
+const numberSuffix = ' ' + defaultTokenSymbol;
+
 /**
  * Keeps an order if within the date range (inclusive)
  * @param {Object} order - a background script order object
@@ -354,7 +356,7 @@ export default ({ myOrders }) => {
             // price
             entry.push(
               <p key="tokenPrice" css="font-weight: 600;">
-                {formatBigNumber(data.price, 0, { numberPrefix: '$' })}
+                {formatBigNumber(data.price, 0, { numberSuffix })}
               </p>
             )
             // type

@@ -1,6 +1,6 @@
 {
   "name": "@ablack/fundraising-aragon-fundraising",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Aragon Assocation <legal@aragon.org>",
   "contributors": [
     "Olivier Sarrouy <olivier@aragon.black>",
@@ -30,6 +30,7 @@
     "apm:publish:hatch:minor": "aragon apm publish minor --files app/build --environment hatch --use-frame --prepublish false",
     "apm:publish:hatch:major": "aragon apm publish major --files app/build --environment hatch --use-frame",
     "apm:publish:rinkeby:patch": "aragon apm publish patch --files app/build --environment rinkeby --use-frame  --prepublish false",
+    "apm:publish:rinkeby:minor": "aragon apm publish minor --files app/build --environment rinkeby --debug",
     "apm:publish:rinkeby:major": "aragon apm publish major --files app/build --environment rinkeby --debug",
     "apm:publish:mainnet:major": "aragon apm publish major --files app/build --environment mainnet --use-frame",
     "publish": "npm run apm:publish:rpc:major"
@@ -63,6 +64,7 @@
     "eth-gas-reporter": "^0.2.0",
     "ethereumjs-testrpc-sc": "^6.5.1-sc.0",
     "ganache-cli": "^6.4.3",
+    "ganache-core": "^2.10.1",
     "solidity-coverage": "0.6.2",
     "solium": "^1.2.3",
     "truffle": "4.1.14",

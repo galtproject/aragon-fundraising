@@ -1,0 +1,3848 @@
+{
+  "contractName": "TimeHelpersMock",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "mockSetTimestamp",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_seconds",
+          "type": "uint256"
+        }
+      ],
+      "name": "mockIncreaseTime",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_seconds",
+          "type": "uint256"
+        }
+      ],
+      "name": "mockDecreaseTime",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_number",
+          "type": "uint256"
+        }
+      ],
+      "name": "mockAdvanceBlocks",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTimestampPublic",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBlockNumberPublic",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506104b4806100206000396000f3006080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166360be675f811461007c5780636958839e146100965780636da1dfac146100ae5780637750db14146100d55780637e365950146100ed5780638f49e12f1461011f575b600080fd5b34801561008857600080fd5b50610094600435610137565b005b3480156100a257600080fd5b50610094600435610171565b3480156100ba57600080fd5b506100c3610176565b60408051918252519081900360200190f35b3480156100e157600080fd5b50610094600435610186565b3480156100f957600080fd5b506101026101bf565b6040805167ffffffffffffffff9092168252519081900360200190f35b34801561012b57600080fd5b506100946004356101c9565b6000541561015a57600054610152908263ffffffff6101f416565b60005561016e565b61016a428263ffffffff6101f416565b6000555b50565b600055565b60006101806102db565b90505b90565b600154156101a9576001546101a1908263ffffffff6102f716565b60015561016e565b6101b9438263ffffffff6102f716565b60015550565b60006101806103a4565b600054156101e457600054610152908263ffffffff6102f716565b61016a428263ffffffff6102f716565b60408051808201909152601281527f4d4154485f5355425f554e444552464c4f57000000000000000000000000000060208201526000908190848411156102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b83811015610298578181015183820152602001610280565b50505050905090810190601f1680156102c55780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b505050900390565b600154600090156102ef5750600154610183565b6101806103b6565b60408051808201909152601181527f4d4154485f4144445f4f564552464c4f570000000000000000000000000000006020820152600090838301908482101561039c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252838181518152602001915080519060200190808383600083811015610298578181015183820152602001610280565b509392505050565b60006101806103b16103ba565b6103d4565b4390565b60008054156103cc5750600054610183565b610180610484565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff83111561047d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252838181518152602001915080519060200190808383600083811015610298578181015183820152602001610280565b5090919050565b42905600a165627a7a7230582039cd72db7a464ba1234a77ad184bfe2df354cd798da9f47db0f2c1908d06cd980029",
+  "deployedBytecode": "0x6080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166360be675f811461007c5780636958839e146100965780636da1dfac146100ae5780637750db14146100d55780637e365950146100ed5780638f49e12f1461011f575b600080fd5b34801561008857600080fd5b50610094600435610137565b005b3480156100a257600080fd5b50610094600435610171565b3480156100ba57600080fd5b506100c3610176565b60408051918252519081900360200190f35b3480156100e157600080fd5b50610094600435610186565b3480156100f957600080fd5b506101026101bf565b6040805167ffffffffffffffff9092168252519081900360200190f35b34801561012b57600080fd5b506100946004356101c9565b6000541561015a57600054610152908263ffffffff6101f416565b60005561016e565b61016a428263ffffffff6101f416565b6000555b50565b600055565b60006101806102db565b90505b90565b600154156101a9576001546101a1908263ffffffff6102f716565b60015561016e565b6101b9438263ffffffff6102f716565b60015550565b60006101806103a4565b600054156101e457600054610152908263ffffffff6102f716565b61016a428263ffffffff6102f716565b60408051808201909152601281527f4d4154485f5355425f554e444552464c4f57000000000000000000000000000060208201526000908190848411156102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b83811015610298578181015183820152602001610280565b50505050905090810190601f1680156102c55780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b505050900390565b600154600090156102ef5750600154610183565b6101806103b6565b60408051808201909152601181527f4d4154485f4144445f4f564552464c4f570000000000000000000000000000006020820152600090838301908482101561039c576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252838181518152602001915080519060200190808383600083811015610298578181015183820152602001610280565b509392505050565b60006101806103b16103ba565b6103d4565b4390565b60008054156103cc5750600054610183565b610180610484565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff83111561047d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252838181518152602001915080519060200190808383600083811015610298578181015183820152602001610280565b5090919050565b42905600a165627a7a7230582039cd72db7a464ba1234a77ad184bfe2df354cd798da9f47db0f2c1908d06cd980029",
+  "sourceMap": "190:2150:67:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;190:2150:67;;;;;;;",
+  "deployedSourceMap": "190:2150:67:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;954:203;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;954:203:67;;;;;;;451:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;451:98:67;;;;;1702:102;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1702:102:67;;;;;;;;;;;;;;;;;;;;1260:206;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;1260:206:67;;;;;1533:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1533:99:67;;;;;;;;;;;;;;;;;;;;;;;650:203;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;650:203:67;;;;;954;1019:15;;:20;1015:135;;1059:15;;:29;;1079:8;1059:29;:19;:29;:::i;:::-;1041:15;:47;1015:135;;;1121:29;:15;1141:8;1121:29;:19;:29;:::i;:::-;1103:15;:47;1015:135;954:203;:::o;451:98::-;514:15;:28;451:98::o;1702:102::-;1755:7;1781:16;:14;:16::i;:::-;1774:23;;1702:102;;:::o;1260:206::-;1325:17;;:22;1321:138;;1369:17;;:30;;1391:7;1369:30;:21;:30;:::i;:::-;1349:17;:50;1321:138;;;1434:25;:12;1451:7;1434:25;:16;:25;:::i;:::-;1414:17;:45;1260:206;:::o;1533:99::-;1584:6;1609:16;:14;:16::i;650:203::-;715:15;;:20;711:135;;755:15;;:29;;775:8;755:29;:19;:29;:::i;711:135::-;817:29;:15;837:8;817:29;:19;:29;:::i;1685:172:63:-;1782:19;;;;;;;;;;;;;;;;;1745:7;;;;1772:8;;;;1764:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;1764:38:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;1824:7:63;;;1685:172::o;2172:166:67:-;2244:17;;2221:7;;2244:22;2240:52;;-1:-1:-1;2275:17:67;;2268:24;;2240:52;2309:22;:20;:22::i;1928:170:63:-;2053:18;;;;;;;;;;;;;;;;;1988:7;;2019;;;;2044;;;;2036:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;2036:36:63;-1:-1:-1;2090:1:63;1928:170;-1:-1:-1;;;1928:170:63:o;1261:106:44:-;1310:6;1335:25;:14;:12;:14::i;:::-;:23;:25::i;347:94::-;422:12;347:94;:::o;1909:158:67:-;1956:7;1979:15;;:20;1975:48;;-1:-1:-1;2008:15:67;;2001:22;;1975:48;2040:20;:18;:20::i;188:149:45:-;283:20;;;;;;;;;;;;;;;;;240:6;;271:10;266:15;;;258:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;258:46:45;-1:-1:-1;328:1:45;;188:149;-1:-1:-1;188:149:45:o;926:144:44:-;999:15;926:144;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"@aragon/os/contracts/common/TimeHelpers.sol\";\nimport \"@aragon/os/contracts/lib/math/SafeMath.sol\";\nimport \"@aragon/os/contracts/lib/math/SafeMath64.sol\";\n\n\ncontract TimeHelpersMock is TimeHelpers {\n    using SafeMath for uint256;\n    using SafeMath64 for uint64;\n\n    uint256 mockedTimestamp;\n    uint256 mockedBlockNumber;\n\n    /**\n    * @dev Sets a mocked timestamp value, used only for testing purposes\n    */\n    function mockSetTimestamp(uint256 _timestamp) public {\n        mockedTimestamp = _timestamp;\n    }\n\n    /**\n    * @dev Increases the mocked timestamp value, used only for testing purposes\n    */\n    function mockIncreaseTime(uint256 _seconds) public {\n        if (mockedTimestamp != 0) mockedTimestamp = mockedTimestamp.add(_seconds);\n        else mockedTimestamp = block.timestamp.add(_seconds);\n    }\n\n    /**\n    * @dev Decreases the mocked timestamp value, used only for testing purposes\n    */\n    function mockDecreaseTime(uint256 _seconds) public {\n        if (mockedTimestamp != 0) mockedTimestamp = mockedTimestamp.sub(_seconds);\n        else mockedTimestamp = block.timestamp.sub(_seconds);\n    }\n\n    /**\n    * @dev Advances the mocked block number value, used only for testing purposes\n    */\n    function mockAdvanceBlocks(uint256 _number) public {\n        if (mockedBlockNumber != 0) mockedBlockNumber = mockedBlockNumber.add(_number);\n        else mockedBlockNumber = block.number.add(_number);\n    }\n\n    /**\n    * @dev Returns the mocked timestamp value\n    */\n    function getTimestampPublic() public view returns (uint64) {\n        return getTimestamp64();\n    }\n\n    /**\n    * @dev Returns the mocked block number value\n    */\n    function getBlockNumberPublic() public view returns (uint256) {\n        return getBlockNumber();\n    }\n\n    /**\n    * @dev Returns the mocked timestamp if it was set, or current `block.timestamp`\n    */\n    function getTimestamp() internal view returns (uint256) {\n        if (mockedTimestamp != 0) return mockedTimestamp;\n        return super.getTimestamp();\n    }\n\n    /**\n    * @dev Returns the mocked block number if it was set, or current `block.number`\n    */\n    function getBlockNumber() internal view returns (uint256) {\n        if (mockedBlockNumber != 0) return mockedBlockNumber;\n        return super.getBlockNumber();\n    }\n}\n",
+  "sourcePath": "@aragon/test-helpers/contracts/TimeHelpersMock.sol",
+  "ast": {
+    "absolutePath": "@aragon/test-helpers/contracts/TimeHelpersMock.sol",
+    "exportedSymbols": {
+      "TimeHelpersMock": [
+        17225
+      ]
+    },
+    "id": 17226,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 17074,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:67"
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/common/TimeHelpers.sol",
+        "file": "@aragon/os/contracts/common/TimeHelpers.sol",
+        "id": 17075,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 14705,
+        "src": "26:53:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/lib/math/SafeMath.sol",
+        "file": "@aragon/os/contracts/lib/math/SafeMath.sol",
+        "id": 17076,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 16843,
+        "src": "80:52:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/lib/math/SafeMath64.sol",
+        "file": "@aragon/os/contracts/lib/math/SafeMath64.sol",
+        "id": 17077,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 16985,
+        "src": "133:54:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 17078,
+              "name": "TimeHelpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 14704,
+              "src": "218:11:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TimeHelpers_$14704",
+                "typeString": "contract TimeHelpers"
+              }
+            },
+            "id": 17079,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:11:67"
+          }
+        ],
+        "contractDependencies": [
+          14704
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 17225,
+        "linearizedBaseContracts": [
+          17225,
+          14704
+        ],
+        "name": "TimeHelpersMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 17082,
+            "libraryName": {
+              "contractScope": null,
+              "id": 17080,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 16842,
+              "src": "242:8:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$16842",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "236:27:67",
+            "typeName": {
+              "id": 17081,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "id": 17085,
+            "libraryName": {
+              "contractScope": null,
+              "id": 17083,
+              "name": "SafeMath64",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 16984,
+              "src": "274:10:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath64_$16984",
+                "typeString": "library SafeMath64"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "268:28:67",
+            "typeName": {
+              "id": 17084,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "289:6:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 17087,
+            "name": "mockedTimestamp",
+            "nodeType": "VariableDeclaration",
+            "scope": 17225,
+            "src": "302:23:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17086,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "302:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 17089,
+            "name": "mockedBlockNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 17225,
+            "src": "331:25:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17088,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "331:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 17098,
+              "nodeType": "Block",
+              "src": "504:45:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 17096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 17094,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "514:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 17095,
+                      "name": "_timestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17091,
+                      "src": "532:10:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "514:28:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 17097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "514:28:67"
+                }
+              ]
+            },
+            "documentation": "@dev Sets a mocked timestamp value, used only for testing purposes",
+            "id": 17099,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockSetTimestamp",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17092,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17091,
+                  "name": "_timestamp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17099,
+                  "src": "477:18:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17090,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "477:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "476:20:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17093,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:0:67"
+            },
+            "scope": 17225,
+            "src": "451:98:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17123,
+              "nodeType": "Block",
+              "src": "701:152:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17104,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "715:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17105,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "734:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "715:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17120,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17114,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "799:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17118,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17101,
+                            "src": "837:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17115,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "817:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17116,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "817:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17117,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "817:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17119,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "817:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "799:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17121,
+                    "nodeType": "ExpressionStatement",
+                    "src": "799:47:67"
+                  },
+                  "id": 17122,
+                  "nodeType": "IfStatement",
+                  "src": "711:135:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17112,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17107,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "737:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17110,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17101,
+                            "src": "775:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17108,
+                            "name": "mockedTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17087,
+                            "src": "755:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17109,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "755:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17111,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "755:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "737:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17113,
+                    "nodeType": "ExpressionStatement",
+                    "src": "737:47:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Increases the mocked timestamp value, used only for testing purposes",
+            "id": 17124,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockIncreaseTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17102,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17101,
+                  "name": "_seconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17124,
+                  "src": "676:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17100,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17103,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "701:0:67"
+            },
+            "scope": 17225,
+            "src": "650:203:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17148,
+              "nodeType": "Block",
+              "src": "1005:152:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17131,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17129,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "1019:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17130,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1038:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1019:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17145,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17139,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "1103:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17143,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17126,
+                            "src": "1141:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17140,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "1121:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17141,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1121:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17142,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sub",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16795,
+                          "src": "1121:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17144,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1121:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1103:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17146,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1103:47:67"
+                  },
+                  "id": 17147,
+                  "nodeType": "IfStatement",
+                  "src": "1015:135:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17132,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "1041:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17135,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17126,
+                            "src": "1079:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17133,
+                            "name": "mockedTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17087,
+                            "src": "1059:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17134,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sub",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16795,
+                          "src": "1059:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17136,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1059:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1041:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17138,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1041:47:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Decreases the mocked timestamp value, used only for testing purposes",
+            "id": 17149,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockDecreaseTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17126,
+                  "name": "_seconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17149,
+                  "src": "980:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17125,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "980:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "979:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1005:0:67"
+            },
+            "scope": 17225,
+            "src": "954:203:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17173,
+              "nodeType": "Block",
+              "src": "1311:155:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17156,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17154,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "1325:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17155,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1346:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1325:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17170,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17164,
+                        "name": "mockedBlockNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17089,
+                        "src": "1414:17:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17168,
+                            "name": "_number",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17151,
+                            "src": "1451:7:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17165,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "1434:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17166,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "number",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1434:12:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17167,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "1434:16:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17169,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1434:25:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1414:45:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17171,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1414:45:67"
+                  },
+                  "id": 17172,
+                  "nodeType": "IfStatement",
+                  "src": "1321:138:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17157,
+                        "name": "mockedBlockNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17089,
+                        "src": "1349:17:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17160,
+                            "name": "_number",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17151,
+                            "src": "1391:7:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17158,
+                            "name": "mockedBlockNumber",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17089,
+                            "src": "1369:17:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17159,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "1369:21:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17161,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1369:30:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1349:50:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17163,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1349:50:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Advances the mocked block number value, used only for testing purposes",
+            "id": 17174,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockAdvanceBlocks",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17152,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17151,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17174,
+                  "src": "1287:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17150,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1287:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1286:17:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17153,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1311:0:67"
+            },
+            "scope": 17225,
+            "src": "1260:206:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17182,
+              "nodeType": "Block",
+              "src": "1592:40:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 17179,
+                      "name": "getTimestamp64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14703,
+                      "src": "1609:14:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 17180,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1609:16:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 17178,
+                  "id": 17181,
+                  "nodeType": "Return",
+                  "src": "1602:23:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked timestamp value",
+            "id": 17183,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampPublic",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1560:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17177,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17183,
+                  "src": "1584:6:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 17176,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1584:6:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1583:8:67"
+            },
+            "scope": 17225,
+            "src": "1533:99:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17191,
+              "nodeType": "Block",
+              "src": "1764:40:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 17188,
+                      "name": "getBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        17224
+                      ],
+                      "referencedDeclaration": 17224,
+                      "src": "1781:14:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17189,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1781:16:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17187,
+                  "id": 17190,
+                  "nodeType": "Return",
+                  "src": "1774:23:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked block number value",
+            "id": 17192,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberPublic",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17184,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1731:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17187,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17186,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17192,
+                  "src": "1755:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17185,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1755:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1754:9:67"
+            },
+            "scope": 17225,
+            "src": "1702:102:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17207,
+              "nodeType": "Block",
+              "src": "1965:102:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17199,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17197,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "1979:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17198,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1998:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1979:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 17202,
+                  "nodeType": "IfStatement",
+                  "src": "1975:48:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17200,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "2008:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "functionReturnParameters": 17196,
+                    "id": 17201,
+                    "nodeType": "Return",
+                    "src": "2001:22:67"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17203,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17700,
+                        "src": "2040:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_TimeHelpersMock_$17225",
+                          "typeString": "contract super TimeHelpersMock"
+                        }
+                      },
+                      "id": 17204,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTimestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14692,
+                      "src": "2040:18:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17205,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2040:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17196,
+                  "id": 17206,
+                  "nodeType": "Return",
+                  "src": "2033:27:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked timestamp if it was set, or current `block.timestamp`",
+            "id": 17208,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestamp",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17193,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1930:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17196,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17195,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17208,
+                  "src": "1956:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17194,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1956:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1955:9:67"
+            },
+            "scope": 17225,
+            "src": "1909:158:67",
+            "stateMutability": "view",
+            "superFunction": 14692,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 17223,
+              "nodeType": "Block",
+              "src": "2230:108:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17215,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17213,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "2244:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17214,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2265:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "2244:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 17218,
+                  "nodeType": "IfStatement",
+                  "src": "2240:52:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17216,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "2275:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "functionReturnParameters": 17212,
+                    "id": 17217,
+                    "nodeType": "Return",
+                    "src": "2268:24:67"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17219,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17700,
+                        "src": "2309:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_TimeHelpersMock_$17225",
+                          "typeString": "contract super TimeHelpersMock"
+                        }
+                      },
+                      "id": 17220,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getBlockNumber",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14672,
+                      "src": "2309:20:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17221,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2309:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17212,
+                  "id": 17222,
+                  "nodeType": "Return",
+                  "src": "2302:29:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked block number if it was set, or current `block.number`",
+            "id": 17224,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2195:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17211,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17224,
+                  "src": "2221:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17210,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2221:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2220:9:67"
+            },
+            "scope": 17225,
+            "src": "2172:166:67",
+            "stateMutability": "view",
+            "superFunction": 14672,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 17226,
+        "src": "190:2150:67"
+      }
+    ],
+    "src": "0:2341:67"
+  },
+  "legacyAST": {
+    "absolutePath": "@aragon/test-helpers/contracts/TimeHelpersMock.sol",
+    "exportedSymbols": {
+      "TimeHelpersMock": [
+        17225
+      ]
+    },
+    "id": 17226,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 17074,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:67"
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/common/TimeHelpers.sol",
+        "file": "@aragon/os/contracts/common/TimeHelpers.sol",
+        "id": 17075,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 14705,
+        "src": "26:53:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/lib/math/SafeMath.sol",
+        "file": "@aragon/os/contracts/lib/math/SafeMath.sol",
+        "id": 17076,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 16843,
+        "src": "80:52:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/lib/math/SafeMath64.sol",
+        "file": "@aragon/os/contracts/lib/math/SafeMath64.sol",
+        "id": 17077,
+        "nodeType": "ImportDirective",
+        "scope": 17226,
+        "sourceUnit": 16985,
+        "src": "133:54:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 17078,
+              "name": "TimeHelpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 14704,
+              "src": "218:11:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TimeHelpers_$14704",
+                "typeString": "contract TimeHelpers"
+              }
+            },
+            "id": 17079,
+            "nodeType": "InheritanceSpecifier",
+            "src": "218:11:67"
+          }
+        ],
+        "contractDependencies": [
+          14704
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 17225,
+        "linearizedBaseContracts": [
+          17225,
+          14704
+        ],
+        "name": "TimeHelpersMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 17082,
+            "libraryName": {
+              "contractScope": null,
+              "id": 17080,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 16842,
+              "src": "242:8:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$16842",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "236:27:67",
+            "typeName": {
+              "id": 17081,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "255:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "id": 17085,
+            "libraryName": {
+              "contractScope": null,
+              "id": 17083,
+              "name": "SafeMath64",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 16984,
+              "src": "274:10:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath64_$16984",
+                "typeString": "library SafeMath64"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "268:28:67",
+            "typeName": {
+              "id": 17084,
+              "name": "uint64",
+              "nodeType": "ElementaryTypeName",
+              "src": "289:6:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint64",
+                "typeString": "uint64"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "id": 17087,
+            "name": "mockedTimestamp",
+            "nodeType": "VariableDeclaration",
+            "scope": 17225,
+            "src": "302:23:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17086,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "302:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 17089,
+            "name": "mockedBlockNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 17225,
+            "src": "331:25:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 17088,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "331:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 17098,
+              "nodeType": "Block",
+              "src": "504:45:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 17096,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 17094,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "514:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 17095,
+                      "name": "_timestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17091,
+                      "src": "532:10:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "514:28:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 17097,
+                  "nodeType": "ExpressionStatement",
+                  "src": "514:28:67"
+                }
+              ]
+            },
+            "documentation": "@dev Sets a mocked timestamp value, used only for testing purposes",
+            "id": 17099,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockSetTimestamp",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17092,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17091,
+                  "name": "_timestamp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17099,
+                  "src": "477:18:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17090,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "477:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "476:20:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17093,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "504:0:67"
+            },
+            "scope": 17225,
+            "src": "451:98:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17123,
+              "nodeType": "Block",
+              "src": "701:152:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17106,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17104,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "715:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17105,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "734:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "715:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17120,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17114,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "799:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17118,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17101,
+                            "src": "837:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17115,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "817:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17116,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "817:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17117,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "817:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17119,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "817:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "799:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17121,
+                    "nodeType": "ExpressionStatement",
+                    "src": "799:47:67"
+                  },
+                  "id": 17122,
+                  "nodeType": "IfStatement",
+                  "src": "711:135:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17112,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17107,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "737:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17110,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17101,
+                            "src": "775:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17108,
+                            "name": "mockedTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17087,
+                            "src": "755:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17109,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "755:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17111,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "755:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "737:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17113,
+                    "nodeType": "ExpressionStatement",
+                    "src": "737:47:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Increases the mocked timestamp value, used only for testing purposes",
+            "id": 17124,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockIncreaseTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17102,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17101,
+                  "name": "_seconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17124,
+                  "src": "676:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17100,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17103,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "701:0:67"
+            },
+            "scope": 17225,
+            "src": "650:203:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17148,
+              "nodeType": "Block",
+              "src": "1005:152:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17131,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17129,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "1019:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17130,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1038:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1019:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17145,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17139,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "1103:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17143,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17126,
+                            "src": "1141:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17140,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "1121:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17141,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1121:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17142,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sub",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16795,
+                          "src": "1121:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17144,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1121:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1103:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17146,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1103:47:67"
+                  },
+                  "id": 17147,
+                  "nodeType": "IfStatement",
+                  "src": "1015:135:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17137,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17132,
+                        "name": "mockedTimestamp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17087,
+                        "src": "1041:15:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17135,
+                            "name": "_seconds",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17126,
+                            "src": "1079:8:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17133,
+                            "name": "mockedTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17087,
+                            "src": "1059:15:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17134,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sub",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16795,
+                          "src": "1059:19:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17136,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1059:29:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1041:47:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17138,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1041:47:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Decreases the mocked timestamp value, used only for testing purposes",
+            "id": 17149,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockDecreaseTime",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17127,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17126,
+                  "name": "_seconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17149,
+                  "src": "980:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17125,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "980:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "979:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17128,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1005:0:67"
+            },
+            "scope": 17225,
+            "src": "954:203:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17173,
+              "nodeType": "Block",
+              "src": "1311:155:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17156,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17154,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "1325:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17155,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1346:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1325:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17170,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17164,
+                        "name": "mockedBlockNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17089,
+                        "src": "1414:17:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17168,
+                            "name": "_number",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17151,
+                            "src": "1451:7:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "id": 17165,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 17528,
+                              "src": "1434:5:67",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 17166,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "number",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": null,
+                            "src": "1434:12:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17167,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "1434:16:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17169,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1434:25:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1414:45:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17171,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1414:45:67"
+                  },
+                  "id": 17172,
+                  "nodeType": "IfStatement",
+                  "src": "1321:138:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17162,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftHandSide": {
+                        "argumentTypes": null,
+                        "id": 17157,
+                        "name": "mockedBlockNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17089,
+                        "src": "1349:17:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "Assignment",
+                      "operator": "=",
+                      "rightHandSide": {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 17160,
+                            "name": "_number",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17151,
+                            "src": "1391:7:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 17158,
+                            "name": "mockedBlockNumber",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17089,
+                            "src": "1369:17:67",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "id": 17159,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "add",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 16820,
+                          "src": "1369:21:67",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$bound_to$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 17161,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1369:30:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "1349:50:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 17163,
+                    "nodeType": "ExpressionStatement",
+                    "src": "1349:50:67"
+                  }
+                }
+              ]
+            },
+            "documentation": "@dev Advances the mocked block number value, used only for testing purposes",
+            "id": 17174,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "mockAdvanceBlocks",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17152,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17151,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17174,
+                  "src": "1287:15:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17150,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1287:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1286:17:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17153,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1311:0:67"
+            },
+            "scope": 17225,
+            "src": "1260:206:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17182,
+              "nodeType": "Block",
+              "src": "1592:40:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 17179,
+                      "name": "getTimestamp64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 14703,
+                      "src": "1609:14:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 17180,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1609:16:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 17178,
+                  "id": 17181,
+                  "nodeType": "Return",
+                  "src": "1602:23:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked timestamp value",
+            "id": 17183,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampPublic",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1560:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17177,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17183,
+                  "src": "1584:6:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 17176,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1584:6:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1583:8:67"
+            },
+            "scope": 17225,
+            "src": "1533:99:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17191,
+              "nodeType": "Block",
+              "src": "1764:40:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 17188,
+                      "name": "getBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        17224
+                      ],
+                      "referencedDeclaration": 17224,
+                      "src": "1781:14:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17189,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1781:16:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17187,
+                  "id": 17190,
+                  "nodeType": "Return",
+                  "src": "1774:23:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked block number value",
+            "id": 17192,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberPublic",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17184,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1731:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17187,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17186,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17192,
+                  "src": "1755:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17185,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1755:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1754:9:67"
+            },
+            "scope": 17225,
+            "src": "1702:102:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 17207,
+              "nodeType": "Block",
+              "src": "1965:102:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17199,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17197,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "1979:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17198,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1998:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "1979:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 17202,
+                  "nodeType": "IfStatement",
+                  "src": "1975:48:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17200,
+                      "name": "mockedTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17087,
+                      "src": "2008:15:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "functionReturnParameters": 17196,
+                    "id": 17201,
+                    "nodeType": "Return",
+                    "src": "2001:22:67"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17203,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17700,
+                        "src": "2040:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_TimeHelpersMock_$17225",
+                          "typeString": "contract super TimeHelpersMock"
+                        }
+                      },
+                      "id": 17204,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getTimestamp",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14692,
+                      "src": "2040:18:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17205,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2040:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17196,
+                  "id": 17206,
+                  "nodeType": "Return",
+                  "src": "2033:27:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked timestamp if it was set, or current `block.timestamp`",
+            "id": 17208,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestamp",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17193,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1930:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17196,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17195,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17208,
+                  "src": "1956:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17194,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1956:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1955:9:67"
+            },
+            "scope": 17225,
+            "src": "1909:158:67",
+            "stateMutability": "view",
+            "superFunction": 14692,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 17223,
+              "nodeType": "Block",
+              "src": "2230:108:67",
+              "statements": [
+                {
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 17215,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 17213,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "2244:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 17214,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "2265:1:67",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "2244:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 17218,
+                  "nodeType": "IfStatement",
+                  "src": "2240:52:67",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 17216,
+                      "name": "mockedBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17089,
+                      "src": "2275:17:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "functionReturnParameters": 17212,
+                    "id": 17217,
+                    "nodeType": "Return",
+                    "src": "2268:24:67"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 17219,
+                        "name": "super",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17700,
+                        "src": "2309:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_super$_TimeHelpersMock_$17225",
+                          "typeString": "contract super TimeHelpersMock"
+                        }
+                      },
+                      "id": 17220,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getBlockNumber",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14672,
+                      "src": "2309:20:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 17221,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2309:22:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 17212,
+                  "id": 17222,
+                  "nodeType": "Return",
+                  "src": "2302:29:67"
+                }
+              ]
+            },
+            "documentation": "@dev Returns the mocked block number if it was set, or current `block.number`",
+            "id": 17224,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumber",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 17209,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2195:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 17212,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17211,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 17224,
+                  "src": "2221:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 17210,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2221:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2220:9:67"
+            },
+            "scope": 17225,
+            "src": "2172:166:67",
+            "stateMutability": "view",
+            "superFunction": 14672,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 17226,
+        "src": "190:2150:67"
+      }
+    ],
+    "src": "0:2341:67"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2020-02-08T20:29:35.809Z"
+}

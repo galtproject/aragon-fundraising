@@ -33,8 +33,8 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
     bytes32   private constant BANCOR_FORMULA_ID      = 0xd71dde5e4bea1928026c1779bde7ed27bd7ef3d0ce9802e4117631eb6fa4ed7d;
     bytes32   private constant PRESALE_ID             = 0x5de9bbdeaf6584c220c7b7f1922383bcd8bbcd4b48832080afd9d5ebf9a04df5;
     bytes32   private constant MARKET_MAKER_ID        = 0xc2bb88ab974c474221f15f691ed9da38be2f5d37364180cec05403c656981bf0;
-    // eth-ens-namehash('hacked4-aragon-fundraising.open.aragonpm.eth')
-    bytes32   private constant ARAGON_FUNDRAISING_ID  = 0x28450215f7bf67af0c1c906432506b8b0c2d720ab66e47026dea64d48afbdba8;
+    // eth-ens-namehash(config.fundraisingName)
+    bytes32   private constant ARAGON_FUNDRAISING_ID  = 0x5fc8fca88a696fa79cf16460ed65d5ab1181e24a79c34c66848b71051ed65ea6;
     bytes32   private constant TAP_ID                 = 0x82967efab7144b764bc9bca2f31a721269b6618c0ff4e50545737700a5e9c9dc;
 
     struct Cache {
@@ -159,6 +159,8 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
     }
 
     function setupFundraisingPermissions() external {
+        _ensureFundraisingAppsCache();
+
         // setup fundraising apps permissions
         Kernel _dao = _daoCache();
         ACL acl = ACL(_dao.acl());

@@ -20,9 +20,7 @@ package-lock.json
 
 # truffle and aragon build artifacts
 */**/abi
-*/**/build
 */**/abis.json
-**/**/artifact.json
 */**/arapp_local.json
 */**/flattened_contracts
 
