@@ -1,0 +1,344 @@
+{
+  "contractName": "ForceSendETH",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "sendByDying",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060a98061001e6000396000f300608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663abd9f1ff81146043575b600080fd5b606273ffffffffffffffffffffffffffffffffffffffff600435166064565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff00a165627a7a723058205f27d72ffc90168fe87e2acb66a46d0af16321076a92a48969df4fdbb676c17d0029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663abd9f1ff81146043575b600080fd5b606273ffffffffffffffffffffffffffffffffffffffff600435166064565b005b8073ffffffffffffffffffffffffffffffffffffffff16ff00a165627a7a723058205f27d72ffc90168fe87e2acb66a46d0af16321076a92a48969df4fdbb676c17d0029",
+  "sourceMap": "26:261:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:261:5;;;;;;;",
+  "deployedSourceMap": "26:261:5:-;;;;;;;;;;;;;;;;;;;;;;;194:91;;;;;;;;;;;270:9;257:23;;",
+  "source": "pragma solidity 0.4.24;\n\n\ncontract ForceSendETH {\n  // Truffle doesn't support selfdestructing on constructor:\n  // Error: The contract code couldn't be stored, please check your gas amount.\n\n  function sendByDying(address recipient) external payable {\n    selfdestruct(recipient);\n  }\n}\n",
+  "sourcePath": "@ablack/fundraising-shared-test-helpers/contracts/ForceSendETH.sol",
+  "ast": {
+    "absolutePath": "@ablack/fundraising-shared-test-helpers/contracts/ForceSendETH.sol",
+    "exportedSymbols": {
+      "ForceSendETH": [
+        1301
+      ]
+    },
+    "id": 1302,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1290,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1301,
+        "linearizedBaseContracts": [
+          1301
+        ],
+        "name": "ForceSendETH",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1299,
+              "nodeType": "Block",
+              "src": "251:34:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1296,
+                        "name": "recipient",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1292,
+                        "src": "270:9:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1295,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7059,
+                      "src": "257:12:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1297,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "257:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1298,
+                  "nodeType": "ExpressionStatement",
+                  "src": "257:23:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1300,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "sendByDying",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1293,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1292,
+                  "name": "recipient",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1300,
+                  "src": "215:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1291,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "214:19:5"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 1294,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "251:0:5"
+            },
+            "scope": 1301,
+            "src": "194:91:5",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1302,
+        "src": "26:261:5"
+      }
+    ],
+    "src": "0:288:5"
+  },
+  "legacyAST": {
+    "absolutePath": "@ablack/fundraising-shared-test-helpers/contracts/ForceSendETH.sol",
+    "exportedSymbols": {
+      "ForceSendETH": [
+        1301
+      ]
+    },
+    "id": 1302,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1290,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1301,
+        "linearizedBaseContracts": [
+          1301
+        ],
+        "name": "ForceSendETH",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1299,
+              "nodeType": "Block",
+              "src": "251:34:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 1296,
+                        "name": "recipient",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1292,
+                        "src": "270:9:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 1295,
+                      "name": "selfdestruct",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7059,
+                      "src": "257:12:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 1297,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "257:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 1298,
+                  "nodeType": "ExpressionStatement",
+                  "src": "257:23:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 1300,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "sendByDying",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1293,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1292,
+                  "name": "recipient",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1300,
+                  "src": "215:17:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1291,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "215:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "214:19:5"
+            },
+            "payable": true,
+            "returnParameters": {
+              "id": 1294,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "251:0:5"
+            },
+            "scope": 1301,
+            "src": "194:91:5",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1302,
+        "src": "26:261:5"
+      }
+    ],
+    "src": "0:288:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2020-02-07T14:15:25.033Z"
+}

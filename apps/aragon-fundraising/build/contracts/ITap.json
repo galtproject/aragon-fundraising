@@ -1,0 +1,1700 @@
+{
+  "contractName": "ITap",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_beneficiary",
+          "type": "address"
+        }
+      ],
+      "name": "updateBeneficiary",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_maximumTapRateIncreasePct",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateMaximumTapRateIncreasePct",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_maximumTapFloorDecreasePct",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateMaximumTapFloorDecreasePct",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "name": "_rate",
+          "type": "uint256"
+        },
+        {
+          "name": "_floor",
+          "type": "uint256"
+        }
+      ],
+      "name": "addTappedToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        },
+        {
+          "name": "_rate",
+          "type": "uint256"
+        },
+        {
+          "name": "_floor",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTappedToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "resetTappedToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "updateTappedAmount",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "getMaximumWithdrawal",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_token",
+          "type": "address"
+        }
+      ],
+      "name": "rates",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity 0.4.24;\n\n\ncontract ITap {\n     function updateBeneficiary(address _beneficiary) external;\n     function updateMaximumTapRateIncreasePct(uint256 _maximumTapRateIncreasePct) external;\n     function updateMaximumTapFloorDecreasePct(uint256 _maximumTapFloorDecreasePct) external;\n     function addTappedToken(address _token, uint256 _rate, uint256 _floor) external;\n     function updateTappedToken(address _token, uint256 _rate, uint256 _floor) external;\n     function resetTappedToken(address _token) external;\n     function updateTappedAmount(address _token) external;\n     function withdraw(address _token) external;\n     function getMaximumWithdrawal(address _token) public view returns (uint256);\n     function rates(address _token) public view returns (uint256);\n }",
+  "sourcePath": "@ablack/fundraising-shared-interfaces/contracts/ITap.sol",
+  "ast": {
+    "absolutePath": "@ablack/fundraising-shared-interfaces/contracts/ITap.sol",
+    "exportedSymbols": {
+      "ITap": [
+        7160
+      ]
+    },
+    "id": 7161,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7097,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7160,
+        "linearizedBaseContracts": [
+          7160
+        ],
+        "name": "ITap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7102,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateBeneficiary",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7099,
+                  "name": "_beneficiary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7102,
+                  "src": "74:20:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7098,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "74:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "73:22:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7101,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:0:10"
+            },
+            "scope": 7160,
+            "src": "47:58:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7107,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateMaximumTapRateIncreasePct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7105,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7104,
+                  "name": "_maximumTapRateIncreasePct",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7107,
+                  "src": "152:34:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7103,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:36:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7106,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "196:0:10"
+            },
+            "scope": 7160,
+            "src": "111:86:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7112,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateMaximumTapFloorDecreasePct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7110,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7109,
+                  "name": "_maximumTapFloorDecreasePct",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7112,
+                  "src": "245:35:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7108,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:37:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7111,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "290:0:10"
+            },
+            "scope": 7160,
+            "src": "203:88:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7121,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7114,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "321:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7113,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7116,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "337:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7115,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "337:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7118,
+                  "name": "_floor",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "352:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7117,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "352:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:47:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "376:0:10"
+            },
+            "scope": 7160,
+            "src": "297:80:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7130,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7128,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7123,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "410:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7122,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "410:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7125,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "426:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7124,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "426:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7127,
+                  "name": "_floor",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "441:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7126,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "409:47:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7129,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "465:0:10"
+            },
+            "scope": 7160,
+            "src": "383:83:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7135,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "resetTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7132,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "498:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7131,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "522:0:10"
+            },
+            "scope": 7160,
+            "src": "472:51:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7140,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateTappedAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7137,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7140,
+                  "src": "557:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7136,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "556:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7139,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "581:0:10"
+            },
+            "scope": 7160,
+            "src": "529:53:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7145,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7142,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7145,
+                  "src": "606:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7141,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "606:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "605:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7144,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:0:10"
+            },
+            "scope": 7160,
+            "src": "588:43:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7152,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getMaximumWithdrawal",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7148,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7147,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7152,
+                  "src": "667:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7146,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "667:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "666:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7151,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7150,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7152,
+                  "src": "704:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7149,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "704:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "703:9:10"
+            },
+            "scope": 7160,
+            "src": "637:76:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7159,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "rates",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7155,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7154,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7159,
+                  "src": "734:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7153,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "734:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "733:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7157,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7159,
+                  "src": "771:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "770:9:10"
+            },
+            "scope": 7160,
+            "src": "719:61:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7161,
+        "src": "26:757:10"
+      }
+    ],
+    "src": "0:783:10"
+  },
+  "legacyAST": {
+    "absolutePath": "@ablack/fundraising-shared-interfaces/contracts/ITap.sol",
+    "exportedSymbols": {
+      "ITap": [
+        7160
+      ]
+    },
+    "id": 7161,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7097,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:10"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 7160,
+        "linearizedBaseContracts": [
+          7160
+        ],
+        "name": "ITap",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7102,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateBeneficiary",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7099,
+                  "name": "_beneficiary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7102,
+                  "src": "74:20:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7098,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "74:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "73:22:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7101,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:0:10"
+            },
+            "scope": 7160,
+            "src": "47:58:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7107,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateMaximumTapRateIncreasePct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7105,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7104,
+                  "name": "_maximumTapRateIncreasePct",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7107,
+                  "src": "152:34:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7103,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "151:36:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7106,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "196:0:10"
+            },
+            "scope": 7160,
+            "src": "111:86:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7112,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateMaximumTapFloorDecreasePct",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7110,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7109,
+                  "name": "_maximumTapFloorDecreasePct",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7112,
+                  "src": "245:35:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7108,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "245:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "244:37:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7111,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "290:0:10"
+            },
+            "scope": 7160,
+            "src": "203:88:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7121,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7114,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "321:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7113,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "321:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7116,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "337:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7115,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "337:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7118,
+                  "name": "_floor",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7121,
+                  "src": "352:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7117,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "352:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "320:47:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "376:0:10"
+            },
+            "scope": 7160,
+            "src": "297:80:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7130,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7128,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7123,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "410:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7122,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "410:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7125,
+                  "name": "_rate",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "426:13:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7124,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "426:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 7127,
+                  "name": "_floor",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7130,
+                  "src": "441:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7126,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "409:47:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7129,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "465:0:10"
+            },
+            "scope": 7160,
+            "src": "383:83:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7135,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "resetTappedToken",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7133,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7132,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7135,
+                  "src": "498:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7131,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7134,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "522:0:10"
+            },
+            "scope": 7160,
+            "src": "472:51:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7140,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "updateTappedAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7138,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7137,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7140,
+                  "src": "557:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7136,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "557:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "556:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7139,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "581:0:10"
+            },
+            "scope": 7160,
+            "src": "529:53:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7145,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "withdraw",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7143,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7142,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7145,
+                  "src": "606:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7141,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "606:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "605:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7144,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "630:0:10"
+            },
+            "scope": 7160,
+            "src": "588:43:10",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7152,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getMaximumWithdrawal",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7148,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7147,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7152,
+                  "src": "667:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7146,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "667:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "666:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7151,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7150,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7152,
+                  "src": "704:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7149,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "704:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "703:9:10"
+            },
+            "scope": 7160,
+            "src": "637:76:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 7159,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "rates",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 7155,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7154,
+                  "name": "_token",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7159,
+                  "src": "734:14:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 7153,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "734:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "733:16:10"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 7157,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7159,
+                  "src": "771:7:10",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 7156,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "771:7:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "770:9:10"
+            },
+            "scope": 7160,
+            "src": "719:61:10",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7161,
+        "src": "26:757:10"
+      }
+    ],
+    "src": "0:783:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2020-02-08T20:29:35.774Z"
+}

@@ -1,0 +1,348 @@
+{
+  "contractName": "TestImports",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a7230582022c2e733a0595dd5e8ccde0af074000bf650791389ca88e5ec7b5e1665a067e50029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582022c2e733a0595dd5e8ccde0af074000bf650791389ca88e5ec7b5e1665a067e50029",
+  "sourceMap": "578:113:1:-;;;605:84;8:9:-1;5:2;;;30:1;27;20:12;5:2;605:84:1;578:113;;;;;;",
+  "deployedSourceMap": "578:113:1:-;;;;;",
+  "source": "pragma solidity 0.4.24;\n\nimport \"@aragon/os/contracts/acl/ACL.sol\";\nimport \"@aragon/os/contracts/factory/DAOFactory.sol\";\nimport \"@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol\";\nimport \"@aragon/os/contracts/kernel/Kernel.sol\";\nimport \"@aragon/apps-shared-migrations/contracts/Migrations.sol\";\nimport \"@aragon/apps-shared-minime/contracts/MiniMeToken.sol\";\nimport \"@aragon/apps-vault/contracts/Vault.sol\";\nimport \"@ablack/fundraising-shared-test-helpers/contracts/AragonFundraisingControllerMock.sol\";\n\n\n// HACK to workaround truffle artifact loading on dependencies\ncontract TestImports {\n    constructor() public {\n        // solium-disable-previous-line no-empty-blocks\n    }\n}\n",
+  "sourcePath": "/Users/jonybang/workspace/fundraising/apps/presale/contracts/test/TestImports.sol",
+  "ast": {
+    "absolutePath": "/Users/jonybang/workspace/fundraising/apps/presale/contracts/test/TestImports.sol",
+    "exportedSymbols": {
+      "TestImports": [
+        1015
+      ]
+    },
+    "id": 1016,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1002,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
+        "file": "@aragon/os/contracts/acl/ACL.sol",
+        "id": 1003,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 4834,
+        "src": "25:42:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/factory/DAOFactory.sol",
+        "file": "@aragon/os/contracts/factory/DAOFactory.sol",
+        "id": 1004,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 7692,
+        "src": "68:53:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
+        "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
+        "id": 1005,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 7799,
+        "src": "122:67:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
+        "file": "@aragon/os/contracts/kernel/Kernel.sol",
+        "id": 1006,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 8345,
+        "src": "190:48:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-shared-migrations/contracts/Migrations.sol",
+        "file": "@aragon/apps-shared-migrations/contracts/Migrations.sol",
+        "id": 1007,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 1246,
+        "src": "239:65:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-shared-minime/contracts/MiniMeToken.sol",
+        "file": "@aragon/apps-shared-minime/contracts/MiniMeToken.sol",
+        "id": 1008,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 2385,
+        "src": "305:62:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-vault/contracts/Vault.sol",
+        "file": "@aragon/apps-vault/contracts/Vault.sol",
+        "id": 1009,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 3539,
+        "src": "368:48:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@ablack/fundraising-shared-test-helpers/contracts/AragonFundraisingControllerMock.sol",
+        "file": "@ablack/fundraising-shared-test-helpers/contracts/AragonFundraisingControllerMock.sol",
+        "id": 1010,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 1189,
+        "src": "417:95:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1015,
+        "linearizedBaseContracts": [
+          1015
+        ],
+        "name": "TestImports",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1013,
+              "nodeType": "Block",
+              "src": "626:63:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 1014,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1011,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "616:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1012,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "626:0:1"
+            },
+            "scope": 1015,
+            "src": "605:84:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1016,
+        "src": "578:113:1"
+      }
+    ],
+    "src": "0:692:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jonybang/workspace/fundraising/apps/presale/contracts/test/TestImports.sol",
+    "exportedSymbols": {
+      "TestImports": [
+        1015
+      ]
+    },
+    "id": 1016,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1002,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
+        "file": "@aragon/os/contracts/acl/ACL.sol",
+        "id": 1003,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 4834,
+        "src": "25:42:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/factory/DAOFactory.sol",
+        "file": "@aragon/os/contracts/factory/DAOFactory.sol",
+        "id": 1004,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 7692,
+        "src": "68:53:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
+        "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
+        "id": 1005,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 7799,
+        "src": "122:67:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
+        "file": "@aragon/os/contracts/kernel/Kernel.sol",
+        "id": 1006,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 8345,
+        "src": "190:48:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-shared-migrations/contracts/Migrations.sol",
+        "file": "@aragon/apps-shared-migrations/contracts/Migrations.sol",
+        "id": 1007,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 1246,
+        "src": "239:65:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-shared-minime/contracts/MiniMeToken.sol",
+        "file": "@aragon/apps-shared-minime/contracts/MiniMeToken.sol",
+        "id": 1008,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 2385,
+        "src": "305:62:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@aragon/apps-vault/contracts/Vault.sol",
+        "file": "@aragon/apps-vault/contracts/Vault.sol",
+        "id": 1009,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 3539,
+        "src": "368:48:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "@ablack/fundraising-shared-test-helpers/contracts/AragonFundraisingControllerMock.sol",
+        "file": "@ablack/fundraising-shared-test-helpers/contracts/AragonFundraisingControllerMock.sol",
+        "id": 1010,
+        "nodeType": "ImportDirective",
+        "scope": 1016,
+        "sourceUnit": 1189,
+        "src": "417:95:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1015,
+        "linearizedBaseContracts": [
+          1015
+        ],
+        "name": "TestImports",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1013,
+              "nodeType": "Block",
+              "src": "626:63:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 1014,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1011,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "616:2:1"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 1012,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "626:0:1"
+            },
+            "scope": 1015,
+            "src": "605:84:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1016,
+        "src": "578:113:1"
+      }
+    ],
+    "src": "0:692:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2020-02-07T14:14:39.558Z"
+}
