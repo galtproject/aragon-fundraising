@@ -17,7 +17,7 @@ const Order = ({ isBuyOrder }) => {
     collaterals,
     bondedToken: { decimals: bondedDecimals, symbol: bondedSymbol },
   } = useAppState()
-  const collateralItems = [collaterals.dai, collaterals.ant]
+  const collateralItems = [collaterals.dai]
 
   // *****************************
   // aragon api
@@ -139,7 +139,7 @@ const Order = ({ isBuyOrder }) => {
                 against
               </Text>
             )}
-            <DropDown items={[collaterals.dai.symbol, collaterals.ant.symbol]} selected={selectedCollateral} onChange={setSelectedCollateral} />
+            <DropDown items={[collaterals.dai.symbol]} selected={selectedCollateral} onChange={setSelectedCollateral} />
           </CombinedInput>
         </AmountField>
       </InputsWrapper>
