@@ -7,17 +7,19 @@ import DefinitionsBox from '../components/DefinitionsBox'
 import { formatBigNumber, fromMonthlyAllocation, toMonthlyAllocation, toDecimals, fromDecimals } from '../utils/bn-utils'
 import ValidationError from '../components/ValidationError'
 
+const { defaultTokenSymbol } = require('../../../../../config');
+
 // In this copy we should display the user the percentage of max increase of the tap
 const helpContent = [
   [
     'What is the tap rate?',
-    'The tap rate defines the amount of DAI which can be released every month out of the market-maker reserve to the beneficiary of this fundraising campaign.',
+    `The tap rate defines the amount of ${defaultTokenSymbol} which can be released every month out of the market-maker reserve to the beneficiary of this fundraising campaign.`,
   ],
   [
     'What is the collateralization ratio?',
     'The collateralization ratio defines the ratio between the amount of collateral in your market-maker reserve and the market cap of this fundraising campaign.',
   ],
-  ['What is the tap floor?', 'The tap floor defines the amount of DAI which are kept in the market-maker reserve regardless of the tap rate.'],
+  [`What is the tap floor?', 'The tap floor defines the amount of ${defaultTokenSymbol} which are kept in the market-maker reserve regardless of the tap rate.`],
 ]
 
 const ReserveSetting = ({ label, helpContent: [hint, help], value }) => {
@@ -225,7 +227,6 @@ export default () => {
               >
                 {[
                   [daiSymbol, daiRatio],
-                  [antSymbol, antRatio],
                 ].map(([symbol, ratio], i) => (
                   <ReserveSetting
                     key={i}
@@ -257,8 +258,8 @@ export default () => {
                   width: 100%;
                 `}
               >
-                <ReserveSetting label="Rate" helpContent={helpContent[0]} value={`${displayRate} DAI / month`} />
-                <ReserveSetting label="Floor" helpContent={helpContent[2]} value={`${displayFloor} DAI`} />
+                <ReserveSetting label="Rate" helpContent={helpContent[0]} value={`${displayRate} ${defaultTokenSymbol} / month`} />
+                <ReserveSetting label="Floor" helpContent={helpContent[2]} value={`${displayFloor} ${defaultTokenSymbol}`} />
                 <Button
                   icon={<img src={EditIcon} />}
                   label="Enact tap"
@@ -293,10 +294,10 @@ export default () => {
             margin-top: ${3 * GU}px;
           `}
         >
-          <Field label="Rate (DAI)">
+          <Field label={`Rate (${defaultTokenSymbol})`}>
             <TextInput type="number" value={newRate} onChange={handleMonthlyChange} wide required />
           </Field>
-          <Field label="Floor (DAI)">
+          <Field label={`Floor (${defaultTokenSymbol})`}>
             <TextInput type="number" value={newFloor} onChange={handleFloorChange} wide required />
           </Field>
           <Button mode="strong" type="submit" disabled={!valid} wide>
@@ -311,10 +312,10 @@ export default () => {
             `}
           >
             <p>
-              You can increase the rate by <b>{displayRateIncrease}%</b> up to <b>{adjustedMaxRate} DAI</b>.
+              You can increase the rate by <b>{displayRateIncrease}%</b> up to <b>{adjustedMaxRate} {defaultTokenSymbol}</b>.
             </p>
             <p>
-              You can decrease the floor by <b>{displayFloorIncrease}%</b> down to <b>{adjustedMinFloor} DAI</b>.
+              You can decrease the floor by <b>{displayFloorIncrease}%</b> down to <b>{adjustedMinFloor} {defaultTokenSymbol}</b>.
             </p>
           </Info>
           <Info
