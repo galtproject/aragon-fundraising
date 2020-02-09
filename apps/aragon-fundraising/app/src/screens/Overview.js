@@ -80,7 +80,7 @@ export default () => {
   const realReserve = reserveBalance ? reserveBalance.minus(toBeClaimed) : null
   const adjustedReserves = realReserve ? formatBigNumber(realReserve, daiDecimals, { numberSuffix }) : '...'
   const adjustedMonthlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals), daiDecimals, { numberSuffix })
-  const adjustedYearlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals).times(12), daiDecimals, { nnumberSuffix })
+  const adjustedYearlyAllowance = formatBigNumber(toMonthlyAllocation(rate, daiDecimals).times(12), daiDecimals, { numberSuffix })
 
   // trends
   /**
