@@ -442,13 +442,27 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
         address[] memory grantees = new address[](2);
         grantees[0] = address(marketMaker);
         grantees[1] = address(presale);
-        acl.createPermission(marketMaker, shareTM, shareTM.MINT_ROLE(),shareVoting);
+        acl.createPermission(marketMaker, shareTM, shareTM.MINT_ROLE(),address(1));
         acl.createPermission(presale, shareTM, shareTM.ISSUE_ROLE(),shareVoting);
         acl.createPermission(presale, shareTM, shareTM.ASSIGN_ROLE(),shareVoting);
         acl.createPermission(presale, shareTM, shareTM.REVOKE_VESTINGS_ROLE(), shareVoting);
-        _createPermissions(acl, grantees, shareTM, shareTM.BURN_ROLE(), shareVoting);
+        _createPermissions(acl, grantees, shareTM, shareTM.BURN_ROLE(), address(1));
         // voting
-        _createVotingPermissions(acl, shareVoting, shareVoting, boardTM, shareVoting);
+        _createShareVotingPermissions(acl, shareVoting, shareVoting, boardTM, shareVoting);
+    }
+
+    function _createShareVotingPermissions(
+        ACL _acl,
+        Voting _voting,
+        address _settingsGrantee,
+        address _createVotesGrantee,
+        address _manager
+    )
+    internal
+    {
+        _acl.createPermission(_settingsGrantee, _voting, _voting.MODIFY_QUORUM_ROLE(), _manager);
+        _acl.createPermission(_settingsGrantee, _voting, _voting.MODIFY_SUPPORT_ROLE(), address(1));
+        _acl.createPermission(_createVotesGrantee, _voting, _voting.CREATE_VOTES_ROLE(), _manager);
     }
 
     /***** internal cache functions *****/
