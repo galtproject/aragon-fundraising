@@ -32,7 +32,7 @@ const Order = ({ isBuyOrder }) => {
   // *****************************
   // internal state
   // *****************************
-  const [selectedCollateral, setSelectedCollateral] = useState(1)
+  const [selectedCollateral, setSelectedCollateral] = useState(0)
   const [amount, setAmount] = useState('')
   const [valid, setValid] = useState(false)
   const [errorMessage, setErrorMessage] = useState(null)
