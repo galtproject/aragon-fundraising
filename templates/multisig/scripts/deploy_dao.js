@@ -7,13 +7,7 @@ const DAYS = 24 * 3600
 const WEEKS = 7 * DAYS
 const PPM = 1e6
 
-const { orgName, orgBoardMembers } = require('../../../config');
-
-const BOARD_TOKEN_NAME = 'Board Token'
-const BOARD_TOKEN_SYMBOL = 'BOARD'
-
-const SHARE_TOKEN_NAME = 'Share Token'
-const SHARE_TOKEN_SYMBOL = 'SHARE'
+const { orgName, orgBoardMembers, orgBoardTokenName, orgBoardTokenSymbol, orgShareTokenName, orgShareTokenSymbol } = require('../../../config');
 
 const BOARD_VOTE_DURATION = WEEKS
 const BOARD_SUPPORT_REQUIRED = 50e16
@@ -30,9 +24,9 @@ const PRESALE_EXCHANGE_RATE = 2 * PPM
 // const PRESALE_PERIOD = 14 * DAYS
 const PRESALE_PERIOD = 0.17 * HOURS
 // const VESTING_CLIFF_PERIOD = 90 * DAYS
-const VESTING_CLIFF_PERIOD = 10 * DAYS
+const VESTING_CLIFF_PERIOD = 0.18 * HOURS
 // const VESTING_COMPLETE_PERIOD = 360 * DAYS
-const VESTING_COMPLETE_PERIOD = 30 * DAYS
+const VESTING_COMPLETE_PERIOD = 0.19 * HOURS
 const PERCENT_SUPPLY_OFFERED = 0.9 * PPM // 90%
 const PERCENT_FUNDING_FOR_BENEFICIARY = 0.25 * PPM // 25%
 
@@ -52,9 +46,9 @@ module.exports = async callback => {
     const template = await Template.at(process.argv[6])
 
     console.log('prepareInstance');
-    const receipt = await template.prepareInstance(BOARD_TOKEN_NAME, BOARD_TOKEN_SYMBOL, orgBoardMembers, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })
+    const receipt = await template.prepareInstance(orgBoardTokenName, orgBoardTokenSymbol, orgBoardMembers, BOARD_VOTING_SETTINGS, 0, { gasPrice: 1000000001 })
     console.log('installShareApps');
-    await template.installShareApps(SHARE_TOKEN_NAME, SHARE_TOKEN_SYMBOL, SHARE_VOTING_SETTINGS, { gasPrice: 1000000001 })
+    await template.installShareApps(orgShareTokenName, orgShareTokenSymbol, SHARE_VOTING_SETTINGS, { gasPrice: 1000000001 })
     console.log('installFundraisingApps');
     await template.installFundraisingApps(
       PRESALE_GOAL,

@@ -28,10 +28,14 @@ module.exports = async callback => {
       const daoFactory = '0xfdef49fbfe37704af55636bdd4b6bc8cd19143f6'
       const miniMeFactory = '0x6ffeb4038f7f077c4d20eaf1706980caec31e2bf'
       const aragonId = '0x3665e7bfd4d3254ae7796779800f5b603c43c60d'
-      const newDefaultToken = await TokenMock.new(owner, 100000e18, defaultTokenSymbol, defaultTokenName)
+      if(!rinkeby.defaultTokenAddress) {
+        const newDefaultToken = await TokenMock.new(owner, 100000e18, defaultTokenSymbol, defaultTokenName)
+        rinkeby.defaultTokenAddress = newDefaultToken.address;
+        console.log('new defaultTokenAddress', rinkeby.defaultTokenAddress);
+      }
       // ANT rinkeby faucet https://faucet.aragon.black/
       const ANT = '0x0d5263b7969144a852d58505602f630f9b20239d' // OK
-      const template = await FundraisingMultisigTemplate.new(daoFactory, ens, miniMeFactory, aragonId, rinkeby.defaultTokenAddress || newDefaultToken.address, ANT, { from: owner })
+      const template = await FundraisingMultisigTemplate.new(daoFactory, ens, miniMeFactory, aragonId, rinkeby.defaultTokenAddress, ANT, { from: owner })
       console.log(template.address)
     } else if (process.argv[4] === 'mainnet') {
       const owner = '0x17d38262cEb5317aF645a246B0Ce6FC4cC3088f6' // OK

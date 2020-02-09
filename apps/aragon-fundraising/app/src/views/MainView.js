@@ -169,7 +169,6 @@ export default () => {
             )
           }
         />
-        {networkType !== 'main' && <Disclaimer />}
         <Tabs selected={tabIndex} onChange={setTabindex} items={tabs} />
         {tabIndex === 0 && <Overview />}
         {tabIndex === 1 && <Orders />}

@@ -110,7 +110,6 @@ export default () => {
             />
           }
         />
-        {networkType !== 'main' && <Disclaimer />}
         <Presale />
         <NewContribution />
         <NewRefund />
