@@ -1,5 +1,5 @@
 module.exports = {
-    orgName: 'curv-test8',
+    orgName: 'curv-test9',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
