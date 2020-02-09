@@ -1,10 +1,10 @@
 module.exports = {
-    orgName: 'curv-test',
+    orgName: 'curv-test2',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
     defaultTokenSymbol: 'CURV',
-    defaultTokenName: 'CURV Token',
+    defaultTokenName: 'CURV',
 
     orgBoardTokenSymbol: 'BOARD',
     orgBoardTokenName: 'BOARD Token',
