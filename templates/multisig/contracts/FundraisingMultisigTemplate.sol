@@ -461,7 +461,7 @@ contract FundraisingMultisigTemplate is EtherTokenConstant, BaseTemplate {
     internal
     {
         _acl.createPermission(_settingsGrantee, _voting, _voting.MODIFY_QUORUM_ROLE(), _manager);
-        _acl.createPermission(address(1), _voting, _voting.MODIFY_SUPPORT_ROLE(), address(1));
+        _acl.createPermission(_settingsGrantee, _voting, _voting.MODIFY_SUPPORT_ROLE(), address(1));
         _acl.createPermission(_createVotesGrantee, _voting, _voting.CREATE_VOTES_ROLE(), _manager);
     }
 

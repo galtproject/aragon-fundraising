@@ -1,18 +1,18 @@
 module.exports = {
-    orgName: 'curv-test9',
+    orgName: 'curio-test',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
     defaultTokenSymbol: 'CUR',
     defaultTokenName: 'CUR',
 
-    orgBoardTokenSymbol: 'CURB',
-    orgBoardTokenName: 'CURB Token',
+    orgBoardTokenSymbol: 'CURCT',
+    orgBoardTokenName: 'CurioCouncilToken',
 
     orgShareTokenSymbol: 'CURV',
     orgShareTokenName: 'CURV Token',
 
-    orgBoardMembers: ['0xb4124ceb3451635dacedd11767f004d8a28c6ee7'],
+    orgBoardMembers: ['0xb09Bd05eb8173B585a8618937430Ea0455EF544C', '0x655a3062B82CB8B0342e15B73Fd65Be1ad6b405a', '0x816c8f8afE27e438b2D3A548BdE214b522839cb4'],
 
     deployer: '0xb4124ceb3451635dacedd11767f004d8a28c6ee7',
 
@@ -20,6 +20,6 @@ module.exports = {
         defaultTokenAddress: '0x13339fd07934cd674269726edf3b5ccee9dd93de'
     },
     rinkeby: {
-        defaultTokenAddress: '0xd9b824de249006e454b5fe0602d9b5c1c475948b'
+        defaultTokenAddress: '0x0a71a1ec38a3a5ea9f28062969850e123230a7d5'
     }
 };
