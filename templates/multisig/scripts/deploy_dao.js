@@ -52,32 +52,32 @@ module.exports = async callback => {
   try {
     const template = await Template.at(process.argv[6])
 
-    // console.log('prepareInstance');
-    // const receipt = await template.prepareInstance(orgBoardTokenName, orgBoardTokenSymbol, orgBoardMembers, BOARD_VOTING_SETTINGS, 0, { gasPrice: 3000000001, nonce: 8 })
-    // console.log('installShareApps');
-    // await template.installShareApps(orgShareTokenName, orgShareTokenSymbol, SHARE_VOTING_SETTINGS, { gasPrice: 3000000001 })
-    // console.log('installFundraisingApps');
-    // await template.installFundraisingApps(
-    //   PRESALE_GOAL,
-    //   PRESALE_PERIOD,
-    //   PRESALE_EXCHANGE_RATE,
-    //   VESTING_CLIFF_PERIOD,
-    //   VESTING_COMPLETE_PERIOD,
-    //   PERCENT_SUPPLY_OFFERED,
-    //   PERCENT_FUNDING_FOR_BENEFICIARY,
-    //   0,
-    //   BATCH_BLOCKS,
-    //   MAXIMUM_TAP_RATE_INCREASE_PCT,
-    //   MAXIMUM_TAP_FLOOR_DECREASE_PCT,
-    //   { gasPrice: 3000000001 }
-    // );
+    console.log('prepareInstance');
+    const receipt = await template.prepareInstance(orgBoardTokenName, orgBoardTokenSymbol, orgBoardMembers, BOARD_VOTING_SETTINGS, 0, { gasPrice: 3000000001, nonce: 8 })
+    console.log('installShareApps');
+    await template.installShareApps(orgShareTokenName, orgShareTokenSymbol, SHARE_VOTING_SETTINGS, { gasPrice: 3000000001 })
+    console.log('installFundraisingApps');
+    await template.installFundraisingApps(
+      PRESALE_GOAL,
+      PRESALE_PERIOD,
+      PRESALE_EXCHANGE_RATE,
+      VESTING_CLIFF_PERIOD,
+      VESTING_COMPLETE_PERIOD,
+      PERCENT_SUPPLY_OFFERED,
+      PERCENT_FUNDING_FOR_BENEFICIARY,
+      0,
+      BATCH_BLOCKS,
+      MAXIMUM_TAP_RATE_INCREASE_PCT,
+      MAXIMUM_TAP_FLOOR_DECREASE_PCT,
+      { gasPrice: 3000000001 }
+    );
 
     console.log('setupFundraisingPermissions');
     await template.setupFundraisingPermissions();
     console.log('finalizeInstance');
     await template.finalizeInstance(orgName, VIRTUAL_SUPPLIES, VIRTUAL_BALANCES, SLIPPAGES, RATE, FLOOR, { gasPrice: 3000000001, gas: 9500000 })
-    // const dao = getEventArgument(receipt, 'DeployDao', 'dao')
-    // console.log('DAO deployed at ' + dao, orgName)
+    const dao = getEventArgument(receipt, 'DeployDao', 'dao')
+    console.log('DAO deployed at ' + dao, orgName)
   } catch (err) {
     console.log(err)
   }
