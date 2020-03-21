@@ -7,7 +7,7 @@
 		},
 		"mainnet": {
 			"registry": "0x314159265dd8dbb310642f98f50c066173c1259b",
-			"appName": "aragon-fundraising.aragonpm.eth",
+			"appName": "curv-fundraising.open.aragonpm.eth",
 			"network": "mainnet"
 		},
 		"rinkeby": {
@@ -121,9 +121,9 @@
 	"path": "contracts/AragonFundraisingController.sol",
 	"appName": "curv-fundraising.open.aragonpm.eth",
 	"env": {
-		"registry": "0x98Df287B6C145399Aaa709692c8D308357bC085D",
+		"registry": "0x314159265dd8dbb310642f98f50c066173c1259b",
 		"appName": "curv-fundraising.open.aragonpm.eth",
-		"network": "rinkeby"
+		"network": "mainnet"
 	},
 	"appId": "0x5fc8fca88a696fa79cf16460ed65d5ab1181e24a79c34c66848b71051ed65ea6",
 	"abi": [
@@ -1155,6 +1155,20 @@
 			"type": "function"
 		}
 	],
+	"deployment": {
+		"contractName": "AragonFundraisingController",
+		"compiledAt": "2020-02-08T20:29:35.891Z",
+		"compiler": {
+			"name": "solc",
+			"version": "0.4.24+commit.e67f0147.Emscripten.clang",
+			"optimizer": {
+				"enabled": true,
+				"runs": 800
+			}
+		},
+		"flattenedCode": "./code.sol",
+		"transactionHash": "0x3611d65575fc4cdb1c101c7983da7a2d5762381b65bf6aa0b8c79ce7da921a45"
+	},
 	"functions": [
 		{
 			"sig": "initialize(address,address,address,address,address[])",
