@@ -1,5 +1,5 @@
 module.exports = {
-    orgName: 'curio-test-4',
+    orgName: 'curio-test-5',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
