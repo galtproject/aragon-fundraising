@@ -41,6 +41,11 @@ const FLOOR = 100000000000000000000000;
 const SLIPPAGES = [250000000000000000, 1000000000000000000];
 const BATCH_BLOCKS = 1;
 
+// http://localhost:8080/#/rinkeby-a/extensions/eth-toolbox/tx/0x052a1490cb1ed2df19acd0d7d96e042ed8c0ef80dabf21951e7bc922d238690d
+// http://localhost:8080/#/rinkeby-a/extensions/eth-toolbox/tx/0x57c1d424336143e3a56fa0961c4b666646d73402533a18661851580a2733708f
+// http://localhost:8080/#/rinkeby-a/extensions/eth-toolbox/tx/0x44577b17702d72f5ae005f3d3da4dabca2041d87aadad1390ab77aa8f01e6143
+// http://localhost:8080/#/rinkeby-a/extensions/eth-toolbox/tx/0x1e4572b20ab2fab5181e5ed193c0405a4d2d8303663b9dbf4ba6717ea12ce91d
+
 console.log('module.exports');
 module.exports = async callback => {
   console.log('template');
