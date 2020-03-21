@@ -1,5 +1,5 @@
 module.exports = {
-    orgName: 'curio-test-1',
+    orgName: 'curio-test-4',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
@@ -20,6 +20,6 @@ module.exports = {
         defaultTokenAddress: '0x13339fd07934cd674269726edf3b5ccee9dd93de'
     },
     rinkeby: {
-        defaultTokenAddress: '0x0a71a1ec38a3a5ea9f28062969850e123230a7d5'
+        defaultTokenAddress: '0xdacee2b38775658fc4281beb2757ebf28041ec03'
     }
 };
