@@ -18,14 +18,14 @@
     "absolutePath": "/Users/jonybang/workspace/fundraising/templates/multisig/contracts/test/TestImports.sol",
     "exportedSymbols": {
       "TestImports": [
-        2254
+        2256
       ]
     },
-    "id": 2255,
+    "id": 2257,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2244,
+        "id": 2246,
         "literals": [
           "solidity",
           "0.4",
@@ -37,10 +37,10 @@
       {
         "absolutePath": "@aragon/id/contracts/FIFSResolvingRegistrar.sol",
         "file": "@aragon/id/contracts/FIFSResolvingRegistrar.sol",
-        "id": 2245,
+        "id": 2247,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 20459,
+        "scope": 2257,
+        "sourceUnit": 20461,
         "src": "25:57:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -48,10 +48,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/ENSFactory.sol",
         "file": "@aragon/os/contracts/factory/ENSFactory.sol",
-        "id": 2246,
+        "id": 2248,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 26245,
+        "scope": 2257,
+        "sourceUnit": 26247,
         "src": "83:53:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -59,10 +59,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/APMRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/APMRegistryFactory.sol",
-        "id": 2247,
+        "id": 2249,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 25849,
+        "scope": 2257,
+        "sourceUnit": 25851,
         "src": "137:61:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -70,10 +70,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
-        "id": 2248,
+        "id": 2250,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 26352,
+        "scope": 2257,
+        "sourceUnit": 26354,
         "src": "199:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -81,10 +81,10 @@
       {
         "absolutePath": "@aragon/templates-shared/contracts/Migrations.sol",
         "file": "@aragon/templates-shared/contracts/Migrations.sol",
-        "id": 2249,
+        "id": 2251,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 29770,
+        "scope": 2257,
+        "sourceUnit": 29772,
         "src": "267:59:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -95,22 +95,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2254,
+        "id": 2256,
         "linearizedBaseContracts": [
-          2254
+          2256
         ],
         "name": "TestImports",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 2252,
+              "id": 2254,
               "nodeType": "Block",
               "src": "440:63:1",
               "statements": []
             },
             "documentation": null,
-            "id": 2253,
+            "id": 2255,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -118,26 +118,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2250,
+              "id": 2252,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "430:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2251,
+              "id": 2253,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "440:0:1"
             },
-            "scope": 2254,
+            "scope": 2256,
             "src": "419:84:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2255,
+        "scope": 2257,
         "src": "392:113:1"
       }
     ],
@@ -147,14 +147,14 @@
     "absolutePath": "/Users/jonybang/workspace/fundraising/templates/multisig/contracts/test/TestImports.sol",
     "exportedSymbols": {
       "TestImports": [
-        2254
+        2256
       ]
     },
-    "id": 2255,
+    "id": 2257,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2244,
+        "id": 2246,
         "literals": [
           "solidity",
           "0.4",
@@ -166,10 +166,10 @@
       {
         "absolutePath": "@aragon/id/contracts/FIFSResolvingRegistrar.sol",
         "file": "@aragon/id/contracts/FIFSResolvingRegistrar.sol",
-        "id": 2245,
+        "id": 2247,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 20459,
+        "scope": 2257,
+        "sourceUnit": 20461,
         "src": "25:57:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -177,10 +177,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/ENSFactory.sol",
         "file": "@aragon/os/contracts/factory/ENSFactory.sol",
-        "id": 2246,
+        "id": 2248,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 26245,
+        "scope": 2257,
+        "sourceUnit": 26247,
         "src": "83:53:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -188,10 +188,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/APMRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/APMRegistryFactory.sol",
-        "id": 2247,
+        "id": 2249,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 25849,
+        "scope": 2257,
+        "sourceUnit": 25851,
         "src": "137:61:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -199,10 +199,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
-        "id": 2248,
+        "id": 2250,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 26352,
+        "scope": 2257,
+        "sourceUnit": 26354,
         "src": "199:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -210,10 +210,10 @@
       {
         "absolutePath": "@aragon/templates-shared/contracts/Migrations.sol",
         "file": "@aragon/templates-shared/contracts/Migrations.sol",
-        "id": 2249,
+        "id": 2251,
         "nodeType": "ImportDirective",
-        "scope": 2255,
-        "sourceUnit": 29770,
+        "scope": 2257,
+        "sourceUnit": 29772,
         "src": "267:59:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -224,22 +224,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 2254,
+        "id": 2256,
         "linearizedBaseContracts": [
-          2254
+          2256
         ],
         "name": "TestImports",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 2252,
+              "id": 2254,
               "nodeType": "Block",
               "src": "440:63:1",
               "statements": []
             },
             "documentation": null,
-            "id": 2253,
+            "id": 2255,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -247,26 +247,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2250,
+              "id": 2252,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "430:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 2251,
+              "id": 2253,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "440:0:1"
             },
-            "scope": 2254,
+            "scope": 2256,
             "src": "419:84:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 2255,
+        "scope": 2257,
         "src": "392:113:1"
       }
     ],
@@ -278,5 +278,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2020-03-20T23:33:06.368Z"
+  "updatedAt": "2020-03-21T00:15:16.533Z"
 }

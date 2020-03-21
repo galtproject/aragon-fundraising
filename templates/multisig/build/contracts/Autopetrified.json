@@ -60,14 +60,14 @@
     "absolutePath": "@aragon/os/contracts/common/Autopetrified.sol",
     "exportedSymbols": {
       "Autopetrified": [
-        23466
+        23468
       ]
     },
-    "id": 23467,
+    "id": 23469,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 23455,
+        "id": 23457,
         "literals": [
           "solidity",
           "^",
@@ -80,10 +80,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/Petrifiable.sol",
         "file": "./Petrifiable.sol",
-        "id": 23456,
+        "id": 23458,
         "nodeType": "ImportDirective",
-        "scope": 23467,
-        "sourceUnit": 23859,
+        "scope": 23469,
+        "sourceUnit": 23861,
         "src": "70:27:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -94,42 +94,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 23457,
+              "id": 23459,
               "name": "Petrifiable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 23858,
+              "referencedDeclaration": 23860,
               "src": "126:11:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Petrifiable_$23858",
+                "typeIdentifier": "t_contract$_Petrifiable_$23860",
                 "typeString": "contract Petrifiable"
               }
             },
-            "id": 23458,
+            "id": 23460,
             "nodeType": "InheritanceSpecifier",
             "src": "126:11:40"
           }
         ],
         "contractDependencies": [
-          23797,
-          23858,
-          24154
+          23799,
+          23860,
+          24156
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 23466,
+        "id": 23468,
         "linearizedBaseContracts": [
-          23466,
-          23858,
-          23797,
-          24154
+          23468,
+          23860,
+          23799,
+          24156
         ],
         "name": "Autopetrified",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 23464,
+              "id": 23466,
               "nodeType": "Block",
               "src": "165:195:40",
               "statements": [
@@ -139,18 +139,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 23461,
+                      "id": 23463,
                       "name": "petrify",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 23857,
+                      "referencedDeclaration": 23859,
                       "src": "344:7:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 23462,
+                    "id": 23464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -164,14 +164,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 23463,
+                  "id": 23465,
                   "nodeType": "ExpressionStatement",
                   "src": "344:9:40"
                 }
               ]
             },
             "documentation": null,
-            "id": 23465,
+            "id": 23467,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -179,26 +179,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 23459,
+              "id": 23461,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "155:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 23460,
+              "id": 23462,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "165:0:40"
             },
-            "scope": 23466,
+            "scope": 23468,
             "src": "144:216:40",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 23467,
+        "scope": 23469,
         "src": "100:262:40"
       }
     ],
@@ -208,14 +208,14 @@
     "absolutePath": "@aragon/os/contracts/common/Autopetrified.sol",
     "exportedSymbols": {
       "Autopetrified": [
-        23466
+        23468
       ]
     },
-    "id": 23467,
+    "id": 23469,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 23455,
+        "id": 23457,
         "literals": [
           "solidity",
           "^",
@@ -228,10 +228,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/Petrifiable.sol",
         "file": "./Petrifiable.sol",
-        "id": 23456,
+        "id": 23458,
         "nodeType": "ImportDirective",
-        "scope": 23467,
-        "sourceUnit": 23859,
+        "scope": 23469,
+        "sourceUnit": 23861,
         "src": "70:27:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -242,42 +242,42 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 23457,
+              "id": 23459,
               "name": "Petrifiable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 23858,
+              "referencedDeclaration": 23860,
               "src": "126:11:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Petrifiable_$23858",
+                "typeIdentifier": "t_contract$_Petrifiable_$23860",
                 "typeString": "contract Petrifiable"
               }
             },
-            "id": 23458,
+            "id": 23460,
             "nodeType": "InheritanceSpecifier",
             "src": "126:11:40"
           }
         ],
         "contractDependencies": [
-          23797,
-          23858,
-          24154
+          23799,
+          23860,
+          24156
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 23466,
+        "id": 23468,
         "linearizedBaseContracts": [
-          23466,
-          23858,
-          23797,
-          24154
+          23468,
+          23860,
+          23799,
+          24156
         ],
         "name": "Autopetrified",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 23464,
+              "id": 23466,
               "nodeType": "Block",
               "src": "165:195:40",
               "statements": [
@@ -287,18 +287,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 23461,
+                      "id": 23463,
                       "name": "petrify",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 23857,
+                      "referencedDeclaration": 23859,
                       "src": "344:7:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 23462,
+                    "id": 23464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -312,14 +312,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 23463,
+                  "id": 23465,
                   "nodeType": "ExpressionStatement",
                   "src": "344:9:40"
                 }
               ]
             },
             "documentation": null,
-            "id": 23465,
+            "id": 23467,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -327,26 +327,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 23459,
+              "id": 23461,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "155:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 23460,
+              "id": 23462,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "165:0:40"
             },
-            "scope": 23466,
+            "scope": 23468,
             "src": "144:216:40",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 23467,
+        "scope": 23469,
         "src": "100:262:40"
       }
     ],
@@ -358,5 +358,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2020-03-20T23:33:06.373Z"
+  "updatedAt": "2020-03-21T00:15:16.534Z"
 }

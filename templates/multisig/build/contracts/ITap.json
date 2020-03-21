@@ -178,14 +178,14 @@
     "absolutePath": "@ablack/fundraising-shared-interfaces/contracts/ITap.sol",
     "exportedSymbols": {
       "ITap": [
-        9706
+        9708
       ]
     },
-    "id": 9707,
+    "id": 9709,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9643,
+        "id": 9645,
         "literals": [
           "solidity",
           "0.4",
@@ -200,9 +200,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 9706,
+        "id": 9708,
         "linearizedBaseContracts": [
-          9706
+          9708
         ],
         "name": "ITap",
         "nodeType": "ContractDefinition",
@@ -210,7 +210,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9648,
+            "id": 9650,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -218,15 +218,15 @@
             "name": "updateBeneficiary",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9646,
+              "id": 9648,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9645,
+                  "id": 9647,
                   "name": "_beneficiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9648,
+                  "scope": 9650,
                   "src": "74:20:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -235,7 +235,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9644,
+                    "id": 9646,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "74:7:11",
@@ -252,12 +252,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9647,
+              "id": 9649,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "104:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "47:58:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -266,7 +266,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9653,
+            "id": 9655,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -274,15 +274,15 @@
             "name": "updateMaximumTapRateIncreasePct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9651,
+              "id": 9653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9650,
+                  "id": 9652,
                   "name": "_maximumTapRateIncreasePct",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9653,
+                  "scope": 9655,
                   "src": "152:34:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -291,7 +291,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9649,
+                    "id": 9651,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:7:11",
@@ -308,12 +308,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9652,
+              "id": 9654,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "196:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "111:86:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -322,7 +322,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9658,
+            "id": 9660,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -330,15 +330,15 @@
             "name": "updateMaximumTapFloorDecreasePct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9656,
+              "id": 9658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9655,
+                  "id": 9657,
                   "name": "_maximumTapFloorDecreasePct",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9658,
+                  "scope": 9660,
                   "src": "245:35:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -347,7 +347,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9654,
+                    "id": 9656,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:11",
@@ -364,12 +364,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9657,
+              "id": 9659,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "290:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "203:88:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -378,7 +378,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9667,
+            "id": 9669,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -386,15 +386,15 @@
             "name": "addTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9665,
+              "id": 9667,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9660,
+                  "id": 9662,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "321:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -403,7 +403,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9659,
+                    "id": 9661,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "321:7:11",
@@ -417,10 +417,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9662,
+                  "id": 9664,
                   "name": "_rate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "337:13:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -429,7 +429,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9661,
+                    "id": 9663,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "337:7:11",
@@ -443,10 +443,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9664,
+                  "id": 9666,
                   "name": "_floor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "352:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -455,7 +455,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9663,
+                    "id": 9665,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "352:7:11",
@@ -472,12 +472,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9666,
+              "id": 9668,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "376:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "297:80:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -486,7 +486,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9676,
+            "id": 9678,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -494,15 +494,15 @@
             "name": "updateTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9674,
+              "id": 9676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9669,
+                  "id": 9671,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "410:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -511,7 +511,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9668,
+                    "id": 9670,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "410:7:11",
@@ -525,10 +525,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9671,
+                  "id": 9673,
                   "name": "_rate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "426:13:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -537,7 +537,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9670,
+                    "id": 9672,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "426:7:11",
@@ -551,10 +551,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9673,
+                  "id": 9675,
                   "name": "_floor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "441:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -563,7 +563,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9672,
+                    "id": 9674,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "441:7:11",
@@ -580,12 +580,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9675,
+              "id": 9677,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "465:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "383:83:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -594,7 +594,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9681,
+            "id": 9683,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -602,15 +602,15 @@
             "name": "resetTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9679,
+              "id": 9681,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9678,
+                  "id": 9680,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9681,
+                  "scope": 9683,
                   "src": "498:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -619,7 +619,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9677,
+                    "id": 9679,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "498:7:11",
@@ -636,12 +636,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9680,
+              "id": 9682,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "522:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "472:51:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -650,7 +650,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9686,
+            "id": 9688,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -658,15 +658,15 @@
             "name": "updateTappedAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9684,
+              "id": 9686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9683,
+                  "id": 9685,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9686,
+                  "scope": 9688,
                   "src": "557:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -675,7 +675,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9682,
+                    "id": 9684,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "557:7:11",
@@ -692,12 +692,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9685,
+              "id": 9687,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "581:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "529:53:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -706,7 +706,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9691,
+            "id": 9693,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -714,15 +714,15 @@
             "name": "withdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9689,
+              "id": 9691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9688,
+                  "id": 9690,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9691,
+                  "scope": 9693,
                   "src": "606:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -731,7 +731,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9687,
+                    "id": 9689,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "606:7:11",
@@ -748,12 +748,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9690,
+              "id": 9692,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "630:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "588:43:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -762,7 +762,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9698,
+            "id": 9700,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -770,15 +770,15 @@
             "name": "getMaximumWithdrawal",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9694,
+              "id": 9696,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9693,
+                  "id": 9695,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9698,
+                  "scope": 9700,
                   "src": "667:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -787,7 +787,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9692,
+                    "id": 9694,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "667:7:11",
@@ -804,15 +804,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9697,
+              "id": 9699,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9696,
+                  "id": 9698,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9698,
+                  "scope": 9700,
                   "src": "704:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -821,7 +821,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9695,
+                    "id": 9697,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "704:7:11",
@@ -836,7 +836,7 @@
               ],
               "src": "703:9:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "637:76:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -845,7 +845,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9705,
+            "id": 9707,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -853,15 +853,15 @@
             "name": "rates",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9701,
+              "id": 9703,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9700,
+                  "id": 9702,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9705,
+                  "scope": 9707,
                   "src": "734:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -870,7 +870,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9699,
+                    "id": 9701,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:11",
@@ -887,15 +887,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9704,
+              "id": 9706,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9703,
+                  "id": 9705,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9705,
+                  "scope": 9707,
                   "src": "771:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -904,7 +904,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9702,
+                    "id": 9704,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "771:7:11",
@@ -919,14 +919,14 @@
               ],
               "src": "770:9:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "719:61:11",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9707,
+        "scope": 9709,
         "src": "26:757:11"
       }
     ],
@@ -936,14 +936,14 @@
     "absolutePath": "@ablack/fundraising-shared-interfaces/contracts/ITap.sol",
     "exportedSymbols": {
       "ITap": [
-        9706
+        9708
       ]
     },
-    "id": 9707,
+    "id": 9709,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 9643,
+        "id": 9645,
         "literals": [
           "solidity",
           "0.4",
@@ -958,9 +958,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 9706,
+        "id": 9708,
         "linearizedBaseContracts": [
-          9706
+          9708
         ],
         "name": "ITap",
         "nodeType": "ContractDefinition",
@@ -968,7 +968,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9648,
+            "id": 9650,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -976,15 +976,15 @@
             "name": "updateBeneficiary",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9646,
+              "id": 9648,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9645,
+                  "id": 9647,
                   "name": "_beneficiary",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9648,
+                  "scope": 9650,
                   "src": "74:20:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -993,7 +993,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9644,
+                    "id": 9646,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "74:7:11",
@@ -1010,12 +1010,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9647,
+              "id": 9649,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "104:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "47:58:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1024,7 +1024,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9653,
+            "id": 9655,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1032,15 +1032,15 @@
             "name": "updateMaximumTapRateIncreasePct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9651,
+              "id": 9653,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9650,
+                  "id": 9652,
                   "name": "_maximumTapRateIncreasePct",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9653,
+                  "scope": 9655,
                   "src": "152:34:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1049,7 +1049,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9649,
+                    "id": 9651,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "152:7:11",
@@ -1066,12 +1066,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9652,
+              "id": 9654,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "196:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "111:86:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1080,7 +1080,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9658,
+            "id": 9660,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1088,15 +1088,15 @@
             "name": "updateMaximumTapFloorDecreasePct",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9656,
+              "id": 9658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9655,
+                  "id": 9657,
                   "name": "_maximumTapFloorDecreasePct",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9658,
+                  "scope": 9660,
                   "src": "245:35:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1105,7 +1105,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9654,
+                    "id": 9656,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "245:7:11",
@@ -1122,12 +1122,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9657,
+              "id": 9659,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "290:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "203:88:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1136,7 +1136,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9667,
+            "id": 9669,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1144,15 +1144,15 @@
             "name": "addTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9665,
+              "id": 9667,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9660,
+                  "id": 9662,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "321:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1161,7 +1161,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9659,
+                    "id": 9661,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "321:7:11",
@@ -1175,10 +1175,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9662,
+                  "id": 9664,
                   "name": "_rate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "337:13:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1187,7 +1187,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9661,
+                    "id": 9663,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "337:7:11",
@@ -1201,10 +1201,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9664,
+                  "id": 9666,
                   "name": "_floor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9667,
+                  "scope": 9669,
                   "src": "352:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1213,7 +1213,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9663,
+                    "id": 9665,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "352:7:11",
@@ -1230,12 +1230,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9666,
+              "id": 9668,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "376:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "297:80:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1244,7 +1244,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9676,
+            "id": 9678,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1252,15 +1252,15 @@
             "name": "updateTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9674,
+              "id": 9676,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9669,
+                  "id": 9671,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "410:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1269,7 +1269,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9668,
+                    "id": 9670,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "410:7:11",
@@ -1283,10 +1283,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9671,
+                  "id": 9673,
                   "name": "_rate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "426:13:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1295,7 +1295,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9670,
+                    "id": 9672,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "426:7:11",
@@ -1309,10 +1309,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 9673,
+                  "id": 9675,
                   "name": "_floor",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9676,
+                  "scope": 9678,
                   "src": "441:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1321,7 +1321,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9672,
+                    "id": 9674,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "441:7:11",
@@ -1338,12 +1338,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9675,
+              "id": 9677,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "465:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "383:83:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1352,7 +1352,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9681,
+            "id": 9683,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1360,15 +1360,15 @@
             "name": "resetTappedToken",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9679,
+              "id": 9681,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9678,
+                  "id": 9680,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9681,
+                  "scope": 9683,
                   "src": "498:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1377,7 +1377,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9677,
+                    "id": 9679,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "498:7:11",
@@ -1394,12 +1394,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9680,
+              "id": 9682,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "522:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "472:51:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1408,7 +1408,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9686,
+            "id": 9688,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1416,15 +1416,15 @@
             "name": "updateTappedAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9684,
+              "id": 9686,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9683,
+                  "id": 9685,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9686,
+                  "scope": 9688,
                   "src": "557:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1433,7 +1433,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9682,
+                    "id": 9684,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "557:7:11",
@@ -1450,12 +1450,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9685,
+              "id": 9687,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "581:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "529:53:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1464,7 +1464,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9691,
+            "id": 9693,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1472,15 +1472,15 @@
             "name": "withdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9689,
+              "id": 9691,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9688,
+                  "id": 9690,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9691,
+                  "scope": 9693,
                   "src": "606:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1489,7 +1489,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9687,
+                    "id": 9689,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "606:7:11",
@@ -1506,12 +1506,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9690,
+              "id": 9692,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "630:0:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "588:43:11",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1520,7 +1520,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9698,
+            "id": 9700,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1528,15 +1528,15 @@
             "name": "getMaximumWithdrawal",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9694,
+              "id": 9696,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9693,
+                  "id": 9695,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9698,
+                  "scope": 9700,
                   "src": "667:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1545,7 +1545,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9692,
+                    "id": 9694,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "667:7:11",
@@ -1562,15 +1562,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9697,
+              "id": 9699,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9696,
+                  "id": 9698,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9698,
+                  "scope": 9700,
                   "src": "704:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1579,7 +1579,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9695,
+                    "id": 9697,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "704:7:11",
@@ -1594,7 +1594,7 @@
               ],
               "src": "703:9:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "637:76:11",
             "stateMutability": "view",
             "superFunction": null,
@@ -1603,7 +1603,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 9705,
+            "id": 9707,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1611,15 +1611,15 @@
             "name": "rates",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 9701,
+              "id": 9703,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9700,
+                  "id": 9702,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9705,
+                  "scope": 9707,
                   "src": "734:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1628,7 +1628,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 9699,
+                    "id": 9701,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "734:7:11",
@@ -1645,15 +1645,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 9704,
+              "id": 9706,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 9703,
+                  "id": 9705,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 9705,
+                  "scope": 9707,
                   "src": "771:7:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1662,7 +1662,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 9702,
+                    "id": 9704,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "771:7:11",
@@ -1677,14 +1677,14 @@
               ],
               "src": "770:9:11"
             },
-            "scope": 9706,
+            "scope": 9708,
             "src": "719:61:11",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 9707,
+        "scope": 9709,
         "src": "26:757:11"
       }
     ],
@@ -1696,5 +1696,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2020-03-20T23:33:06.400Z"
+  "updatedAt": "2020-03-21T00:15:16.565Z"
 }

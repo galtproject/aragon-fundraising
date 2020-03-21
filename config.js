@@ -1,5 +1,5 @@
 module.exports = {
-    orgName: 'curio-test',
+    orgName: 'curio-test-1',
     fundraisingName: 'curv-fundraising.open.aragonpm.eth',
     templateName: 'curv-fundraising-template.open.aragonpm.eth',
 
@@ -10,7 +10,7 @@ module.exports = {
     orgBoardTokenName: 'CurioCouncilToken',
 
     orgShareTokenSymbol: 'CURV',
-    orgShareTokenName: 'CURV Token',
+    orgShareTokenName: 'CurioVotingToken',
 
     orgBoardMembers: ['0xb09Bd05eb8173B585a8618937430Ea0455EF544C', '0x655a3062B82CB8B0342e15B73Fd65Be1ad6b405a', '0x816c8f8afE27e438b2D3A548BdE214b522839cb4'],
 

@@ -31,14 +31,14 @@
     "absolutePath": "@aragon/apps-agent/contracts/standards/IERC165.sol",
     "exportedSymbols": {
       "IERC165": [
-        11973
+        11975
       ]
     },
-    "id": 11974,
+    "id": 11976,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11965,
+        "id": 11967,
         "literals": [
           "solidity",
           "0.4",
@@ -53,9 +53,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 11973,
+        "id": 11975,
         "linearizedBaseContracts": [
-          11973
+          11975
         ],
         "name": "IERC165",
         "nodeType": "ContractDefinition",
@@ -63,7 +63,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 11972,
+            "id": 11974,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -71,15 +71,15 @@
             "name": "supportsInterface",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11968,
+              "id": 11970,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11967,
+                  "id": 11969,
                   "name": "interfaceId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11972,
+                  "scope": 11974,
                   "src": "77:18:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -88,7 +88,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 11966,
+                    "id": 11968,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "77:6:16",
@@ -105,15 +105,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 11971,
+              "id": 11973,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11970,
+                  "id": 11972,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11972,
+                  "scope": 11974,
                   "src": "120:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -122,7 +122,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 11969,
+                    "id": 11971,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "120:4:16",
@@ -137,14 +137,14 @@
               ],
               "src": "119:6:16"
             },
-            "scope": 11973,
+            "scope": 11975,
             "src": "50:76:16",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 11974,
+        "scope": 11976,
         "src": "26:102:16"
       }
     ],
@@ -154,14 +154,14 @@
     "absolutePath": "@aragon/apps-agent/contracts/standards/IERC165.sol",
     "exportedSymbols": {
       "IERC165": [
-        11973
+        11975
       ]
     },
-    "id": 11974,
+    "id": 11976,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11965,
+        "id": 11967,
         "literals": [
           "solidity",
           "0.4",
@@ -176,9 +176,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 11973,
+        "id": 11975,
         "linearizedBaseContracts": [
-          11973
+          11975
         ],
         "name": "IERC165",
         "nodeType": "ContractDefinition",
@@ -186,7 +186,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 11972,
+            "id": 11974,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -194,15 +194,15 @@
             "name": "supportsInterface",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11968,
+              "id": 11970,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11967,
+                  "id": 11969,
                   "name": "interfaceId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11972,
+                  "scope": 11974,
                   "src": "77:18:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -211,7 +211,7 @@
                     "typeString": "bytes4"
                   },
                   "typeName": {
-                    "id": 11966,
+                    "id": 11968,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
                     "src": "77:6:16",
@@ -228,15 +228,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 11971,
+              "id": 11973,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11970,
+                  "id": 11972,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11972,
+                  "scope": 11974,
                   "src": "120:4:16",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -245,7 +245,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 11969,
+                    "id": 11971,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "120:4:16",
@@ -260,14 +260,14 @@
               ],
               "src": "119:6:16"
             },
-            "scope": 11973,
+            "scope": 11975,
             "src": "50:76:16",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 11974,
+        "scope": 11976,
         "src": "26:102:16"
       }
     ],
@@ -279,5 +279,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2020-03-20T23:33:06.369Z"
+  "updatedAt": "2020-03-21T00:15:16.533Z"
 }
