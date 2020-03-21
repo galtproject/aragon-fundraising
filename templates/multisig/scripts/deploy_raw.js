@@ -38,7 +38,7 @@ module.exports = async callback => {
       const template = await FundraisingMultisigTemplate.new(daoFactory, ens, miniMeFactory, aragonId, rinkeby.defaultTokenAddress, ANT, { from: owner })
       console.log(template.address)
     } else if (process.argv[4] === 'mainnet') {
-      const owner = '0x17d38262cEb5317aF645a246B0Ce6FC4cC3088f6' // OK
+      const owner = deployer // OK
       const ens = '0x314159265dd8dbb310642f98f50c066173c1259b' // OK
       const daoFactory = '0xb9da44c051c6cc9e04b7e0f95e95d69c6a6d8031' // OK
       const miniMeFactory = '0x909d05f384d0663ed4be59863815ab43b4f347ec' // OK
