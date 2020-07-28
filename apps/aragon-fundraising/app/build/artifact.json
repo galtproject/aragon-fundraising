@@ -1155,20 +1155,6 @@
 			"type": "function"
 		}
 	],
-	"deployment": {
-		"contractName": "AragonFundraisingController",
-		"compiledAt": "2020-02-08T20:29:35.891Z",
-		"compiler": {
-			"name": "solc",
-			"version": "0.4.24+commit.e67f0147.Emscripten.clang",
-			"optimizer": {
-				"enabled": true,
-				"runs": 800
-			}
-		},
-		"flattenedCode": "./code.sol",
-		"transactionHash": "0x4c868528f5fc724a4e7f0d08782f97df1d6cc754f6c9b519872a81eb9115e0e5"
-	},
 	"functions": [
 		{
 			"sig": "initialize(address,address,address,address,address[])",

@@ -29,7 +29,7 @@ module.exports = async callback => {
       const miniMeFactory = '0x6ffeb4038f7f077c4d20eaf1706980caec31e2bf'
       const aragonId = '0x3665e7bfd4d3254ae7796779800f5b603c43c60d'
       if(!rinkeby.defaultTokenAddress) {
-        const newDefaultToken = await TokenMock.new(owner, 100000e18, defaultTokenSymbol, defaultTokenName)
+        const newDefaultToken = await TokenMock.new(owner, 10000000e18, defaultTokenSymbol, defaultTokenName)
         rinkeby.defaultTokenAddress = newDefaultToken.address;
         console.log('new defaultTokenAddress', rinkeby.defaultTokenAddress);
       }
